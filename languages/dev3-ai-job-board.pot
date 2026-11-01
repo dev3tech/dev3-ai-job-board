@@ -1,0 +1,5115 @@
+# Copyright (C) 2026 DEV3 Technologies
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DEV3 AI Job Board & Resume Matcher for WordPress 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dev3-ai-job-board\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-25T04:50:24+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dev3-ai-job-board\n"
+
+#. Plugin Name of the plugin
+#: dev3-ai-job-board.php
+msgid "DEV3 AI Job Board & Resume Matcher for WordPress"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: dev3-ai-job-board.php
+msgid "https://dev3.tech/item/dev3-ai-job-board"
+msgstr ""
+
+#. Description of the plugin
+#: dev3-ai-job-board.php
+msgid "A complete job board with front-end submission, paid packages, employer and candidate dashboards, and DEV3 AI resume parsing and match scores."
+msgstr ""
+
+#. Author of the plugin
+#: dev3-ai-job-board.php
+msgid "DEV3 Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+#: dev3-ai-job-board.php
+msgid "https://dev3.tech"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:40
+msgid "DEV3 AI Job Board"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:70
+#: build/admin.js:15
+#: build/block.js:1
+msgid "Settings"
+msgstr ""
+
+#: includes/Ai/Describer.php:82
+msgid "Add a job title or a few notes about the role first."
+msgstr ""
+
+#. translators: 1: company, 2: job title
+#: includes/Ai/Describer.php:177
+#, php-format
+msgid "%1$s is hiring a %2$s. In this role you will work with a friendly team on meaningful work."
+msgstr ""
+
+#: includes/Ai/Describer.php:179
+msgid "new team member"
+msgstr ""
+
+#: includes/Ai/Describer.php:182
+msgid "Own your area of work from planning to delivery."
+msgstr ""
+
+#: includes/Ai/Describer.php:182
+msgid "Work closely with your team and share what you learn."
+msgstr ""
+
+#. translators: %s: skills list
+#: includes/Ai/Describer.php:187
+#, php-format
+msgid "Hands-on experience with %s."
+msgstr ""
+
+#: includes/Ai/Describer.php:197
+msgid "New role"
+msgstr ""
+
+#: includes/Ai/Describer.php:222
+msgid "What you will do"
+msgstr ""
+
+#: includes/Ai/Describer.php:223
+msgid "What you bring"
+msgstr ""
+
+#: includes/Ai/Describer.php:224
+msgid "Nice to have"
+msgstr ""
+
+#: includes/Ai/Describer.php:225
+msgid "What we offer"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:29
+msgid "Age-coded: it can put off experienced candidates."
+msgstr ""
+
+#: includes/Ai/Inclusive.php:30
+msgid "Gender-coded: use neutral words so everyone feels invited."
+msgstr ""
+
+#: includes/Ai/Inclusive.php:31
+msgid "Jargon that reads as exclusive; say what the skill is."
+msgstr ""
+
+#: includes/Ai/Inclusive.php:32
+msgid "Can exclude people by origin; ask for the level you need."
+msgstr ""
+
+#: includes/Ai/Inclusive.php:33
+msgid "Can exclude disabled candidates; describe the actual task."
+msgstr ""
+
+#: includes/Ai/Inclusive.php:35
+msgid "motivated"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:36
+msgid "comfortable with digital tools"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:37
+msgid "early-career candidates welcome"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:40
+msgid "expert"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:41
+msgid "you"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:42
+msgid "your"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:43
+msgid "salesperson"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:44
+msgid "chair"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:45
+msgid "workforce"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:46
+msgid "team"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:47
+msgid "ambitious"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:48
+msgid "fluent English speaker"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:49
+msgid "Vague and can hide bias; name the values you mean."
+msgstr ""
+
+#: includes/Ai/Inclusive.php:49
+msgid "shares our values"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:51
+msgid "Suggests long hours; describe how the team actually works."
+msgstr ""
+
+#: includes/Ai/Inclusive.php:51
+msgid "we care about doing great work"
+msgstr ""
+
+#: includes/Ai/Inclusive.php:96
+msgid "Write the job description first."
+msgstr ""
+
+#. translators: %s: skill list
+#: includes/Ai/Matcher.php:274
+#, php-format
+msgid "Has %s, which the job asks for."
+msgstr ""
+
+#. translators: %s: skill list
+#: includes/Ai/Matcher.php:278
+#, php-format
+msgid "Profile does not show: %s."
+msgstr ""
+
+#. translators: 1: candidate years, 2: required years
+#: includes/Ai/Matcher.php:283
+#, php-format
+msgid "%1$s years of experience (the job asks for about %2$d)."
+msgstr ""
+
+#. translators: 1: candidate years, 2: required years
+#: includes/Ai/Matcher.php:286
+#, php-format
+msgid "%1$s years of experience; the job asks for about %2$d."
+msgstr ""
+
+#: includes/Ai/Matcher.php:290
+msgid "Has held a similar role before."
+msgstr ""
+
+#: includes/Ai/Matcher.php:292
+msgid "Previous job titles differ from this role; check transferable experience."
+msgstr ""
+
+#: includes/Ai/Matcher.php:295
+msgid "Remote role: location is not a barrier."
+msgstr ""
+
+#: includes/Ai/Matcher.php:295
+msgid "Location and workplace preference fit."
+msgstr ""
+
+#: includes/Ai/Matcher.php:297
+msgid "Location or workplace preference may not fit; ask the candidate."
+msgstr ""
+
+#: includes/Ai/Matcher.php:299
+msgid "Strong fit on the stated requirements."
+msgstr ""
+
+#: includes/Ai/Matcher.php:299
+msgid "Partial fit: review the gaps."
+msgstr ""
+
+#: includes/Ai/Matcher.php:299
+msgid "Few stated requirements are visible in the profile."
+msgstr ""
+
+#: includes/Ai/Matcher.php:413
+#: includes/Data/Applications.php:320
+#: includes/Data/Applications.php:402
+#: includes/Rest/Admin_Controller.php:425
+#: includes/Rest/Employer_Controller.php:67
+msgid "Application not found."
+msgstr ""
+
+#: includes/Ai/Matcher.php:417
+#: includes/Billing/Checkout.php:159
+#: includes/Core3/Core/Jobs.php:339
+#: includes/Core3/Rest/Core_Controller.php:112
+#: includes/Data/Applications.php:95
+#: includes/Data/Listings.php:387
+#: includes/Data/Listings.php:529
+#: includes/Data/Listings.php:562
+#: includes/Rest/Admin_Controller.php:301
+#: includes/Rest/Admin_Controller.php:379
+#: includes/Rest/Employer_Controller.php:133
+#: includes/Rest/Employer_Controller.php:284
+#: includes/Rest/Public_Controller.php:192
+#: includes/Rest/Public_Controller.php:253
+msgid "Job not found."
+msgstr ""
+
+#. translators: %d: score
+#: includes/Ai/Matcher.php:425
+#, php-format
+msgid "Match score %d/100 calculated"
+msgstr ""
+
+#: includes/Ai/Matcher.php:514
+msgid "There are no applications to score."
+msgstr ""
+
+#: includes/Ai/Matcher.php:543
+msgid "Indexing needs DEV3 AI. Add a Google Gemini API key in API Config."
+msgstr ""
+
+#: includes/Ai/Matcher.php:565
+msgid "Everything is already indexed."
+msgstr ""
+
+#: includes/Ai/Resume_Parser.php:99
+#: includes/Ai/Resume_Parser.php:103
+#: includes/Rest/Candidate_Controller.php:102
+msgid "Resume file not found."
+msgstr ""
+
+#: includes/Ai/Resume_Parser.php:164
+msgid "We could not read text from this file (it may be a scanned image). Fill in your profile by hand, or upload a text-based PDF or Word file."
+msgstr ""
+
+#: includes/Billing/Checkout.php:132
+msgid "That package has no job posts left."
+msgstr ""
+
+#: includes/Billing/Checkout.php:156
+msgid "Choose an available package."
+msgstr ""
+
+#: includes/Billing/Stripe.php:45
+msgid "Stripe is not configured."
+msgstr ""
+
+#: includes/Billing/Stripe.php:57
+msgid "Could not reach Stripe. Try again."
+msgstr ""
+
+#: includes/Billing/Stripe.php:62
+msgid "Stripe rejected the request."
+msgstr ""
+
+#: includes/Billing/Stripe.php:99
+msgid "Stripe did not return a checkout page."
+msgstr ""
+
+#: includes/Billing/Stripe.php:115
+msgid "Invalid checkout session."
+msgstr ""
+
+#: includes/Billing/Stripe.php:119
+#: includes/Billing/Stripe.php:141
+#: includes/Rest/Admin_Controller.php:722
+msgid "Payment not found."
+msgstr ""
+
+#: includes/Billing/Stripe.php:144
+msgid "The payment is not complete yet."
+msgstr ""
+
+#: includes/Billing/Stripe.php:147
+msgid "The paid amount does not match the package."
+msgstr ""
+
+#: includes/Billing/Woo.php:54
+msgid "WooCommerce is not active."
+msgstr ""
+
+#. translators: %s: package name
+#: includes/Billing/Woo.php:61
+#, php-format
+msgid "Job package: %s"
+msgstr ""
+
+#: includes/Billing/Woo.php:96
+msgid "The WooCommerce cart is not available."
+msgstr ""
+
+#: includes/Billing/Woo.php:137
+#: includes/Data/Post_Types.php:54
+#: includes/Front/Employer_Dashboard.php:141
+#: includes/Front/Employer_Dashboard.php:194
+#: includes/Privacy_Data.php:75
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "Job"
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:212
+msgid "Unsupported image type."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:216
+msgid "The image data is invalid."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "AI features are turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "Turn AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Storefront AI is turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Turn storefront AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:49
+msgid "No Gemini API key is configured."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:50
+msgid "Open the plugin settings → API Config and paste a key from Google AI Studio."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:63
+msgid "AI paused: the monthly AI budget is reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:64
+msgid "Raise the monthly cap in API Config, or wait until the budget resets on the 1st of next month."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:80
+msgid "The AI service took too long to respond."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:81
+msgid "Try again, shorten the prompt, lower Max Output Tokens, or switch to the faster model."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:89
+msgid "Your server could not reach the AI service (Google Gemini API)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:90
+msgid "Check the server's internet connection or firewall (outbound HTTPS to generativelanguage.googleapis.com)."
+msgstr ""
+
+#. translators: %s: transport error message.
+#: includes/Core3/Api/Api_Error.php:98
+#, php-format
+msgid "Request to the AI service failed: %s"
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:99
+#: includes/Core3/Api/Gemini_Client.php:250
+#: includes/Core3/Api/Gemini_Client.php:422
+msgid "Try again in a moment."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:128
+msgid "The Gemini API key is not valid."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:129
+msgid "Create a new key in Google AI Studio and paste it in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "Your Gemini quota is exhausted."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "AI rate limit reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:139
+msgid "Wait for the quota to reset, enable billing on your Google Cloud project, or switch to a model with remaining quota."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:140
+msgid "Wait a few seconds and try again."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:148
+msgid "This API key is not allowed to use Gemini."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:149
+msgid "Enable the Generative Language API for the key's project, and check any key restrictions (HTTP referrer / IP)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:156
+msgid "The selected Gemini model is not available."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:157
+msgid "Pick another model in API Config — click \"Refresh models\" to load the ones your key can use."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:164
+msgid "The AI service is not available in your server's region."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:165
+msgid "Host the site in a supported region or use a key from a supported project."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:172
+msgid "The AI service is temporarily unavailable."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:173
+msgid "This is on Google's side. Try again shortly or switch models."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:180
+msgid "The AI service rejected the request."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:181
+msgid "Adjust the prompt or settings and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:250
+msgid "The AI returned an incomplete embedding batch."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI blocked this image request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI did not return an image."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+#: includes/Core3/Api/Gemini_Client.php:472
+#: includes/Core3/Api/Gemini_Client.php:508
+msgid "Rephrase the prompt and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+msgid "Try again, or describe the image more concretely."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:421
+msgid "The AI returned malformed data."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:471
+msgid "The AI blocked this request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:507
+msgid "The AI stopped because the response was flagged."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:515
+msgid "The AI ran out of output tokens before writing an answer."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:516
+msgid "Increase Max Output Tokens in API Config, or set Reasoning to \"Low\"."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:523
+msgid "The AI returned an empty response."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:524
+msgid "Try again or rephrase the prompt."
+msgstr ""
+
+#: includes/Core3/Api/Prompts.php:124
+msgid "Unknown prompt template."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:90
+msgid "Unknown job type."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:116
+msgid "The job could not be saved."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:238
+#: build/admin.js:1
+msgid "Failed"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:33
+#: includes/Core3/Core/Privacy.php:34
+#: includes/Core3/Core/Privacy.php:165
+msgid "AI usage log"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/Core3/Core/Privacy.php:85
+#, php-format
+msgid "This site uses %s, which sends the content needed for AI features (for example product details, reviews or form text) to Google Gemini, operated by Google LLC, as a data processor. Only the fields needed for the requested feature are sent. Google's terms and privacy policy apply: https://ai.google.dev/gemini-api/terms"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:87
+msgid "The plugin keeps a usage log (time, feature, token counts and the user account that triggered the request) to show AI usage and costs to administrators. It does not store the prompts."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:169
+#: build/admin.js:3
+msgid "Feature"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:173
+#: build/admin.js:1
+msgid "Model"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:177
+#: build/admin.js:1
+msgid "Tokens"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:181
+#: build/admin.js:11
+msgid "Date"
+msgstr ""
+
+#: includes/Core3/Data/Usage_Repository.php:194
+msgid "Deleted user"
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:72
+msgid "Your session has expired. Reload the editor and try again."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:75
+#: includes/Core3/Rest/Core_Controller.php:115
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:94
+msgid "Cross-origin requests are not allowed."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:104
+#: includes/Rest/Candidate_Controller.php:98
+#: includes/Rest/Employer_Controller.php:266
+#: includes/Rest/Employer_Controller.php:349
+#: includes/Rest/Employer_Controller.php:366
+msgid "Too many requests. Please wait a moment."
+msgstr ""
+
+#: includes/Data/Alerts.php:34
+#: includes/Data/Applications.php:104
+msgid "Enter a valid email address."
+msgstr ""
+
+#: includes/Data/Alerts.php:40
+msgid "You already have 20 job alerts."
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Data/Alerts.php:121
+#, php-format
+msgid "%s+"
+msgstr ""
+
+#: includes/Data/Alerts.php:123
+msgid "All new jobs"
+msgstr ""
+
+#: includes/Data/Applications.php:26
+msgid "New"
+msgstr ""
+
+#: includes/Data/Applications.php:27
+msgid "Screening"
+msgstr ""
+
+#: includes/Data/Applications.php:28
+msgid "Interview"
+msgstr ""
+
+#: includes/Data/Applications.php:29
+#: includes/Data/Applications.php:46
+msgid "Offer"
+msgstr ""
+
+#: includes/Data/Applications.php:30
+#: includes/Data/Applications.php:47
+msgid "Hired"
+msgstr ""
+
+#: includes/Data/Applications.php:31
+msgid "Not a fit"
+msgstr ""
+
+#: includes/Data/Applications.php:32
+#: includes/Data/Applications.php:49
+msgid "Withdrawn"
+msgstr ""
+
+#: includes/Data/Applications.php:43
+msgid "Received"
+msgstr ""
+
+#: includes/Data/Applications.php:44
+#: includes/Front/Employer_Dashboard.php:44
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/admin.js:6
+msgid "In review"
+msgstr ""
+
+#: includes/Data/Applications.php:45
+msgid "Interviewing"
+msgstr ""
+
+#: includes/Data/Applications.php:48
+msgid "Not selected"
+msgstr ""
+
+#: includes/Data/Applications.php:70
+msgid "This job is no longer open."
+msgstr ""
+
+#: includes/Data/Applications.php:73
+msgid "This position has been filled."
+msgstr ""
+
+#: includes/Data/Applications.php:76
+msgid "The application deadline has passed."
+msgstr ""
+
+#: includes/Data/Applications.php:79
+msgid "Apply for this job on the employer's website."
+msgstr ""
+
+#: includes/Data/Applications.php:107
+msgid "Enter your name."
+msgstr ""
+
+#: includes/Data/Applications.php:112
+msgid "You have already applied for this job."
+msgstr ""
+
+#: includes/Data/Applications.php:128
+msgid "Attach your resume (PDF, Word or text)."
+msgstr ""
+
+#: includes/Data/Applications.php:158
+msgid "Could not save the application. Try again."
+msgstr ""
+
+#: includes/Data/Applications.php:323
+msgid "Unknown stage."
+msgstr ""
+
+#: includes/Data/Applications.php:326
+#: build/admin.js:6
+msgid "The candidate withdrew this application."
+msgstr ""
+
+#: includes/Data/Applications.php:412
+msgid "Withdrawn by the candidate"
+msgstr ""
+
+#: includes/Data/Companies.php:171
+#: includes/Rest/Admin_Controller.php:576
+msgid "Company not found."
+msgstr ""
+
+#: includes/Data/Companies.php:174
+#: includes/Front/Submission.php:450
+msgid "Add the company name."
+msgstr ""
+
+#: includes/Data/Files.php:87
+msgid "Upload a PDF, Word (.docx) or text file."
+msgstr ""
+
+#: includes/Data/Files.php:100
+msgid "The file content does not match its type."
+msgstr ""
+
+#: includes/Data/Files.php:119
+#: includes/Rest/Controller.php:52
+#: includes/Rest/Controller.php:60
+msgid "The upload failed. Try again."
+msgstr ""
+
+#. translators: %d: megabytes
+#: includes/Data/Files.php:124
+#, php-format
+msgid "The file must be smaller than %d MB."
+msgstr ""
+
+#: includes/Data/Files.php:134
+#: includes/Data/Files.php:139
+msgid "Could not save the file."
+msgstr ""
+
+#: includes/Data/Files.php:268
+msgid "This download link has expired. Reload the page and try again."
+msgstr ""
+
+#: includes/Data/Files.php:272
+msgid "You cannot open this file."
+msgstr ""
+
+#: includes/Data/Files.php:276
+msgid "The file is missing."
+msgstr ""
+
+#: includes/Data/Listings.php:38
+#: build/block.js:1
+msgid "On-site"
+msgstr ""
+
+#: includes/Data/Listings.php:39
+#: build/block.js:1
+msgid "Hybrid"
+msgstr ""
+
+#: includes/Data/Listings.php:40
+#: build/block.js:1
+msgid "Remote"
+msgstr ""
+
+#: includes/Data/Listings.php:51
+msgid "Entry level"
+msgstr ""
+
+#: includes/Data/Listings.php:52
+msgid "Mid level"
+msgstr ""
+
+#: includes/Data/Listings.php:53
+msgid "Senior"
+msgstr ""
+
+#: includes/Data/Listings.php:54
+msgid "Lead / Principal"
+msgstr ""
+
+#: includes/Data/Listings.php:55
+msgid "Executive"
+msgstr ""
+
+#: includes/Data/Listings.php:66
+msgid "per hour"
+msgstr ""
+
+#: includes/Data/Listings.php:67
+msgid "per day"
+msgstr ""
+
+#: includes/Data/Listings.php:68
+msgid "per week"
+msgstr ""
+
+#: includes/Data/Listings.php:69
+msgid "per month"
+msgstr ""
+
+#: includes/Data/Listings.php:70
+msgid "per year"
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Data/Listings.php:216
+#, php-format
+msgid "From %s"
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Data/Listings.php:220
+#, php-format
+msgid "Up to %s"
+msgstr ""
+
+#: includes/Data/Listings.php:361
+#: includes/Data/Listings.php:364
+msgid "Add a job title."
+msgstr ""
+
+#: includes/Data/Listings.php:367
+msgid "Add the application link, or choose another way to apply."
+msgstr ""
+
+#: includes/Data/Listings.php:370
+msgid "Add the email address for applications."
+msgstr ""
+
+#: includes/Data/Packages.php:28
+msgid "Basic"
+msgstr ""
+
+#: includes/Data/Packages.php:29
+msgid "One job post for 30 days."
+msgstr ""
+
+#. translators: 1: remaining posts, 2: days
+#: includes/Data/Packages.php:40
+#: includes/Front/Employer_Dashboard.php:145
+#: includes/Front/Submission.php:334
+#: includes/Front/Templates.php:196
+#: includes/Front/Templates.php:439
+#: build/admin.js:3
+#: build/admin.js:6
+msgid "Featured"
+msgstr ""
+
+#: includes/Data/Packages.php:41
+msgid "Pinned to the top of search results for 45 days."
+msgstr ""
+
+#: includes/Data/Packages.php:52
+msgid "Hiring pack"
+msgstr ""
+
+#: includes/Data/Packages.php:53
+msgid "Five featured jobs to use within a year."
+msgstr ""
+
+#: includes/Data/Packages.php:132
+#: includes/Front/Submission.php:82
+#: build/admin.js:13
+msgid "Package"
+msgstr ""
+
+#: includes/Data/Post_Types.php:53
+#: includes/Front/Employer_Dashboard.php:72
+#: includes/Front/Frontend.php:415
+#: build/admin.js:3
+#: build/admin.js:4
+#: build/admin.js:11
+#: build/admin.js:15
+msgid "Jobs"
+msgstr ""
+
+#: includes/Data/Post_Types.php:55
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "Add job"
+msgstr ""
+
+#: includes/Data/Post_Types.php:56
+msgid "Edit job"
+msgstr ""
+
+#: includes/Data/Post_Types.php:57
+#: includes/Front/Templates.php:306
+#: includes/Front/Templates.php:703
+#: build/admin.js:3
+msgid "Search jobs"
+msgstr ""
+
+#: includes/Data/Post_Types.php:58
+msgid "No jobs found"
+msgstr ""
+
+#: includes/Data/Post_Types.php:79
+#: includes/Front/Employer_Dashboard.php:74
+#: includes/Front/Frontend.php:419
+#: build/admin.js:8
+#: build/admin.js:15
+#: build/block.js:1
+msgid "Companies"
+msgstr ""
+
+#: includes/Data/Post_Types.php:80
+#: includes/Front/Candidate_Dashboard.php:120
+#: includes/Front/Submission.php:132
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "Company"
+msgstr ""
+
+#: includes/Data/Post_Types.php:101
+#: build/admin.js:1
+msgid "Candidate profiles"
+msgstr ""
+
+#: includes/Data/Post_Types.php:102
+#: includes/Privacy_Data.php:107
+msgid "Candidate profile"
+msgstr ""
+
+#: includes/Data/Post_Types.php:116
+msgid "Job categories"
+msgstr ""
+
+#: includes/Data/Post_Types.php:116
+#: includes/Front/Candidate_Dashboard.php:331
+#: includes/Front/Submission.php:161
+#: includes/Front/Templates.php:310
+#: build/block.js:1
+msgid "Category"
+msgstr ""
+
+#: includes/Data/Post_Types.php:117
+#: build/admin.js:9
+msgid "Job types"
+msgstr ""
+
+#: includes/Data/Post_Types.php:117
+#: includes/Front/Submission.php:162
+#: includes/Front/Templates.php:311
+#: build/admin.js:4
+msgid "Job type"
+msgstr ""
+
+#: includes/Data/Post_Types.php:118
+msgid "Job locations"
+msgstr ""
+
+#: includes/Data/Post_Types.php:118
+#: includes/Front/Candidate_Dashboard.php:332
+#: includes/Front/Employer_Dashboard.php:232
+#: includes/Front/Submission.php:178
+#: includes/Front/Templates.php:305
+#: includes/Privacy_Data.php:119
+#: build/admin.js:4
+#: build/admin.js:6
+msgid "Location"
+msgstr ""
+
+#: includes/Data/Post_Types.php:119
+#: includes/Front/Candidate_Dashboard.php:207
+#: includes/Front/Employer_Dashboard.php:229
+#: includes/Front/Employer_Dashboard.php:240
+#: includes/Front/Submission.php:195
+#: includes/Front/Templates.php:445
+#: includes/Privacy_Data.php:123
+#: build/admin.js:4
+#: build/admin.js:6
+#: build/admin.js:9
+msgid "Skills"
+msgstr ""
+
+#: includes/Data/Post_Types.php:119
+msgid "Skill"
+msgstr ""
+
+#: includes/Data/Post_Types.php:155
+msgctxt "job status"
+msgid "Expired"
+msgstr ""
+
+#. translators: %s: count
+#: includes/Data/Post_Types.php:161
+#, php-format
+msgid "Expired <span class=\"count\">(%s)</span>"
+msgid_plural "Expired <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Data/Post_Types.php:167
+msgctxt "job status"
+msgid "Awaiting payment"
+msgstr ""
+
+#. translators: %s: count
+#: includes/Data/Post_Types.php:173
+#, php-format
+msgid "Awaiting payment <span class=\"count\">(%s)</span>"
+msgid_plural "Awaiting payment <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Data/Post_Types.php:195
+#: build/admin.js:11
+#: build/admin.js:13
+msgid "Employer"
+msgstr ""
+
+#: includes/Data/Post_Types.php:200
+#: includes/Front/Employer_Dashboard.php:254
+#: build/admin.js:1
+#: build/admin.js:8
+msgid "Candidate"
+msgstr ""
+
+#: includes/Data/Post_Types.php:204
+msgid "Full-time"
+msgstr ""
+
+#: includes/Data/Post_Types.php:205
+msgid "Part-time"
+msgstr ""
+
+#: includes/Data/Post_Types.php:206
+msgid "Contract"
+msgstr ""
+
+#: includes/Data/Post_Types.php:207
+msgid "Temporary"
+msgstr ""
+
+#: includes/Data/Post_Types.php:208
+msgid "Internship"
+msgstr ""
+
+#: includes/Data/Post_Types.php:209
+msgid "Freelance"
+msgstr ""
+
+#: includes/Data/Resumes.php:273
+msgid "Log in to save your profile."
+msgstr ""
+
+#: includes/Data/UserPackages.php:123
+msgid "This package has no job posts left."
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:128
+#, php-format
+msgid "New job to review: %s"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:128
+msgid "A new job is waiting for review"
+msgstr ""
+
+#. translators: %s: job
+#: includes/Emails/Mailer.php:128
+#, php-format
+msgid "\"%s\" was submitted and needs your approval."
+msgstr ""
+
+#. translators: %s: job
+#: includes/Emails/Mailer.php:128
+msgid "Review job"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:143
+#, php-format
+msgid "Your job is live: %s"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:143
+msgid "Your job is live"
+msgstr ""
+
+#. translators: %s: job
+#: includes/Emails/Mailer.php:143
+#, php-format
+msgid "\"%s\" is now published and candidates can apply."
+msgstr ""
+
+#. translators: %s: job
+#: includes/Emails/Mailer.php:143
+msgid "View job"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:158
+#, php-format
+msgid "Your job expires soon: %s"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:158
+msgid "Your job expires soon"
+msgstr ""
+
+#. translators: 1: job, 2: date
+#: includes/Emails/Mailer.php:158
+#, php-format
+msgid "\"%1$s\" expires on %2$s. Relist it from your dashboard to keep receiving applications."
+msgstr ""
+
+#. translators: 1: job, 2: date
+#. translators: 1: amount, 2: package
+#: includes/Emails/Mailer.php:158
+#: includes/Emails/Mailer.php:236
+msgid "Open dashboard"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:172
+#, php-format
+msgid "Your job has expired: %s"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:172
+msgid "Your job has expired"
+msgstr ""
+
+#. translators: %s: job
+#: includes/Emails/Mailer.php:172
+#, php-format
+msgid "\"%s\" is no longer listed. You can relist it from your dashboard."
+msgstr ""
+
+#. translators: %s: job
+#: includes/Emails/Mailer.php:172
+#: includes/Front/Submission.php:370
+msgid "Relist job"
+msgstr ""
+
+#. translators: 1: candidate, 2: job
+#: includes/Emails/Mailer.php:187
+#, php-format
+msgid "%1$s applied for \"%2$s\"."
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:192
+#, php-format
+msgid "New application: %s"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:192
+msgid "You have a new application"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:192
+msgid "Review application"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:197
+#, php-format
+msgid "Application received: %s"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:197
+msgid "Thanks for applying"
+msgstr ""
+
+#. translators: 1: job, 2: company
+#: includes/Emails/Mailer.php:197
+#, php-format
+msgid "We sent your application for \"%1$s\" to %2$s. You will hear from them if they want to move forward."
+msgstr ""
+
+#. translators: 1: job, 2: company
+#: includes/Emails/Mailer.php:197
+#: includes/Front/Templates.php:565
+msgid "Track your applications"
+msgstr ""
+
+#. translators: 1: job, 2: status
+#: includes/Emails/Mailer.php:214
+#, php-format
+msgid "Your application for \"%1$s\" is now: %2$s."
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:219
+#, php-format
+msgid "Update on your application: %s"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:219
+msgid "Application update"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Emails/Mailer.php:219
+msgid "View your applications"
+msgstr ""
+
+#. translators: %s: status
+#: includes/Emails/Mailer.php:221
+#, php-format
+msgid "Emailed the candidate: %s"
+msgstr ""
+
+#. translators: %s: package
+#: includes/Emails/Mailer.php:236
+#, php-format
+msgid "Payment received: %s"
+msgstr ""
+
+#. translators: %s: package
+#: includes/Emails/Mailer.php:236
+msgid "Thanks for your payment"
+msgstr ""
+
+#. translators: 1: amount, 2: package
+#: includes/Emails/Mailer.php:236
+#, php-format
+msgid "We received %1$s for the %2$s package. Your job posts are ready to use."
+msgstr ""
+
+#. translators: 1: amount, 2: package
+#: includes/Emails/Mailer.php:240
+#, php-format
+msgid "New payment: %1$s for %2$s"
+msgstr ""
+
+#. translators: 1: amount, 2: package
+#: includes/Emails/Mailer.php:240
+msgid "New package payment"
+msgstr ""
+
+#. translators: 1: user, 2: amount, 3: gateway
+#: includes/Emails/Mailer.php:240
+#, php-format
+msgid "%1$s paid %2$s via %3$s."
+msgstr ""
+
+#. translators: 1: user, 2: amount, 3: gateway
+#: includes/Emails/Mailer.php:240
+msgid "View payments"
+msgstr ""
+
+#. translators: 1: package, 2: amount, 3: reference
+#: includes/Emails/Mailer.php:256
+#, php-format
+msgid "You chose the %1$s package (%2$s). Use reference #%3$s with your payment. Your job goes live once we confirm it."
+msgstr ""
+
+#: includes/Emails/Mailer.php:260
+msgid "How to pay for your job package"
+msgstr ""
+
+#: includes/Emails/Mailer.php:260
+msgid "Payment instructions"
+msgstr ""
+
+#: includes/Emails/Mailer.php:262
+msgid "Offline payment to confirm"
+msgstr ""
+
+#. translators: 1: user, 2: amount, 3: reference
+#: includes/Emails/Mailer.php:262
+#, php-format
+msgid "%1$s will pay %2$s offline (reference #%3$s). Mark it paid in Packages & payments when it arrives."
+msgstr ""
+
+#. translators: 1: user, 2: amount, 3: reference
+#: includes/Emails/Mailer.php:262
+msgid "Open payments"
+msgstr ""
+
+#: includes/Emails/Mailer.php:272
+msgid "Confirm your job alert"
+msgstr ""
+
+#. translators: %s: search
+#: includes/Emails/Mailer.php:272
+#, php-format
+msgid "Confirm that you want emails about new jobs for: %s. If you did not ask for this, ignore this email."
+msgstr ""
+
+#. translators: %s: search
+#: includes/Emails/Mailer.php:272
+msgid "Confirm alert"
+msgstr ""
+
+#. translators: %s: search
+#: includes/Emails/Mailer.php:294
+#, php-format
+msgid "New jobs for your alert \"%s\":"
+msgstr ""
+
+#. translators: %s: search
+#: includes/Emails/Mailer.php:295
+msgid "Unsubscribe from this alert"
+msgstr ""
+
+#. translators: %d: number of jobs
+#: includes/Emails/Mailer.php:297
+#, php-format
+msgid "%d new job matches your alert"
+msgid_plural "%d new jobs match your alert"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of jobs
+#: includes/Emails/Mailer.php:297
+msgid "New jobs for you"
+msgstr ""
+
+#. translators: %d: number of jobs
+#: includes/Emails/Mailer.php:297
+#: includes/Front/Templates.php:693
+msgid "See all jobs"
+msgstr ""
+
+#: includes/Front/Account.php:42
+#: includes/Front/Templates.php:568
+msgid "Log in"
+msgstr ""
+
+#: includes/Front/Account.php:52
+msgid "Email or username"
+msgstr ""
+
+#: includes/Front/Account.php:55
+msgid "Forgot your password?"
+msgstr ""
+
+#: includes/Front/Account.php:58
+msgid "Create an employer account"
+msgstr ""
+
+#: includes/Front/Account.php:58
+msgid "Create a candidate account"
+msgstr ""
+
+#: includes/Front/Account.php:61
+msgid "Your name"
+msgstr ""
+
+#: includes/Front/Account.php:62
+#: includes/Front/Employer_Dashboard.php:256
+#: includes/Front/Frontend.php:148
+#: includes/Front/Templates.php:584
+#: build/admin.js:15
+msgid "Email"
+msgstr ""
+
+#: includes/Front/Account.php:63
+msgid "Password"
+msgstr ""
+
+#: includes/Front/Account.php:63
+msgid "At least 8 characters."
+msgstr ""
+
+#: includes/Front/Account.php:64
+#: includes/Front/Templates.php:568
+msgid "Create account"
+msgstr ""
+
+#: includes/Front/Account.php:79
+msgid "Registration is closed."
+msgstr ""
+
+#: includes/Front/Account.php:88
+msgid "Enter your name and a valid email address."
+msgstr ""
+
+#: includes/Front/Account.php:91
+msgid "Choose a password with at least 8 characters."
+msgstr ""
+
+#: includes/Front/Account.php:94
+msgid "An account with this email already exists. Log in instead."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:55
+msgid "Your job search"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:55
+msgid "Create a free profile to apply in one click, track your applications and get job alerts."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:58
+#: includes/Front/Employer_Dashboard.php:237
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "Profile"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:59
+#: includes/Front/Employer_Dashboard.php:73
+#: includes/Front/Employer_Dashboard.php:141
+#: includes/Front/Employer_Dashboard.php:147
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/admin.js:6
+#: build/admin.js:8
+#: build/admin.js:15
+msgid "Applications"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:60
+msgid "Saved jobs"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:61
+#: build/admin.js:13
+#: build/admin.js:15
+msgid "Job alerts"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:62
+msgid "Recommended"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:70
+msgid "Complete your profile to apply faster."
+msgstr ""
+
+#. translators: %d: percent
+#: includes/Front/Candidate_Dashboard.php:72
+#, php-format
+msgid "Profile %d%% complete"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:73
+#: includes/Front/Employer_Dashboard.php:83
+msgid "Dashboard sections"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:80
+msgid "Profile saved."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:81
+msgid "Application withdrawn."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:82
+msgid "Removed from saved jobs."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:83
+msgid "Alert deleted."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:84
+msgid "Alert created."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:85
+msgid "Welcome! Upload your resume to fill in your profile in seconds."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:119
+#: includes/Front/Submission.php:159
+#: build/admin.js:4
+msgid "Job title"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:121
+#: includes/Front/Submission.php:184
+#: build/admin.js:4
+msgid "From"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:122
+#: includes/Front/Submission.php:185
+#: build/admin.js:4
+msgid "To"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:123
+msgid "I work here now"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:124
+msgid "What you did"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:125
+#: includes/Front/Candidate_Dashboard.php:144
+#: includes/Front/Candidate_Dashboard.php:292
+#: build/admin.js:8
+#: build/admin.js:11
+msgid "Remove"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:140
+msgid "Degree or certificate"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:141
+msgid "Field of study"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:142
+msgid "School"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:143
+msgid "Year"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:158
+msgid "Label"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:158
+msgid "Link"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:158
+msgid "Remove link"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:172
+msgid "Uploading your resume…"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:173
+msgid "Reading your resume… this can take up to a minute."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:173
+msgid "Reading your resume…"
+msgstr ""
+
+#. translators: %s: list of sections
+#: includes/Front/Candidate_Dashboard.php:175
+#, php-format
+msgid "We filled in: %s. Check every field, then save your profile."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:176
+msgid "Your resume is attached, but we could not read details from it. Fill in your profile below."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:178
+msgid "headline"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:179
+msgid "summary"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:180
+msgid "location"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:181
+msgid "skills"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:182
+msgid "experience"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:183
+msgid "education"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:184
+msgid "links"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:186
+msgid "Replace the details already in your profile with the ones from this resume?"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:187
+#: build/admin.js:1
+msgid "Not saved yet"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:193
+msgid "Your resume"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:193
+msgid "Upload your resume"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:194
+msgid "PDF, Word (.docx) or text. We fill in your profile from it, and you check everything before saving."
+msgstr ""
+
+#. translators: %d: open jobs
+#: includes/Front/Candidate_Dashboard.php:197
+#: includes/Front/Employer_Dashboard.php:278
+#: build/admin.js:3
+#: build/admin.js:4
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "View"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:199
+msgid "Upload a new one"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:199
+msgid "Choose file"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:202
+msgid "About you"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:203
+#: includes/Privacy_Data.php:111
+msgid "Headline"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:203
+msgid "e.g. Senior Frontend Developer"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:204
+msgid "City and country"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:205
+msgid "Phone (shared only when you apply)"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:206
+#: includes/Privacy_Data.php:115
+msgid "Summary"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:207
+msgid "Separate skills with commas. Employers see how your skills match their jobs."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:208
+msgid "Where do you want to work?"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:212
+msgid "Job types you want"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:219
+#: includes/Front/Employer_Dashboard.php:230
+#: includes/Front/Employer_Dashboard.php:238
+#: includes/Privacy_Data.php:127
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "Experience"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:219
+msgid "Add a job"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:220
+#: includes/Front/Employer_Dashboard.php:239
+#: includes/Privacy_Data.php:131
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "Education"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:220
+msgid "Add education"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:221
+msgid "Links"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:221
+msgid "Add a link"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:232
+msgid "Do not add your age, date of birth, photo, marital status, nationality or other personal characteristics: employers on this site do not need them, and they are never used for matching."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:233
+msgid "You have unsaved changes"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:233
+msgid "Save profile"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:252
+#: includes/Front/Employer_Dashboard.php:180
+#: build/admin.js:1
+msgid "No applications yet"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:252
+msgid "Find jobs"
+msgstr ""
+
+#. translators: %s: date
+#: includes/Front/Candidate_Dashboard.php:268
+#: build/admin.js:6
+#, php-format,js-format
+msgid "Applied %s"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:271
+msgid "Withdraw"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:271
+msgid "Withdraw this application?"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:295
+msgid "No saved jobs"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:295
+msgid "Tap the heart on any job to keep it here."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:324
+msgid "Weekly email"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:324
+msgid "Daily email"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:324
+#: includes/Front/Employer_Dashboard.php:159
+#: build/admin.js:8
+#: build/admin.js:9
+#: build/admin.js:11
+#: build/admin.js:15
+msgid "Delete"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:329
+msgid "New job alert"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:330
+#: includes/Front/Templates.php:304
+msgid "Keywords"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:330
+msgid "e.g. designer"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:331
+#: includes/Front/Frontend.php:243
+#: includes/Front/Templates.php:310
+msgid "All categories"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:332
+#: includes/Front/Templates.php:305
+msgid "Anywhere"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:333
+#: includes/Front/Frontend.php:149
+msgid "How often"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:333
+#: includes/Front/Frontend.php:150
+#: build/admin.js:15
+msgid "Daily"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:333
+#: includes/Front/Frontend.php:151
+#: build/admin.js:15
+msgid "Weekly"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:334
+msgid "Remote jobs only"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:335
+#: includes/Front/Frontend.php:152
+msgid "Create alert"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:348
+msgid "Add your skills to see recommendations"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:348
+msgid "We suggest jobs based on the skills and experience in your profile."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:348
+msgid "Complete your profile"
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:350
+msgid "Jobs that fit the skills and experience in your profile."
+msgstr ""
+
+#: includes/Front/Candidate_Dashboard.php:399
+#: includes/Front/Candidate_Dashboard.php:412
+#: includes/Front/Candidate_Dashboard.php:424
+#: includes/Front/Employer_Dashboard.php:354
+#: includes/Front/Employer_Dashboard.php:419
+#: includes/Front/Forms.php:55
+#: includes/Rest/Controller.php:31
+msgid "Your session expired. Reload the page and try again."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:43
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/admin.js:6
+msgid "Live"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:45
+#: build/admin.js:1
+#: build/admin.js:6
+msgid "Draft"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:46
+#: includes/Front/Employer_Dashboard.php:317
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/admin.js:6
+msgid "Awaiting payment"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:47
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/admin.js:6
+msgid "Expired"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:69
+#: includes/Front/Employer_Dashboard.php:82
+#: build/admin.js:15
+#: build/block.js:1
+msgid "Employer dashboard"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:69
+msgid "Log in to manage your jobs and review applications."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:75
+#: build/admin.js:11
+msgid "Packages"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:82
+#: includes/Front/Employer_Dashboard.php:138
+#: includes/Front/Submission.php:68
+#: build/admin.js:15
+msgid "Post a job"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:90
+msgid "Your job is live."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:91
+msgid "Thanks! Your job was submitted and will go live after a quick review."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:92
+msgid "We emailed you payment instructions. Your job goes live once the payment is confirmed."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:93
+msgid "Payment received. Thank you!"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:94
+msgid "We are still waiting for the payment confirmation. This can take a minute."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:95
+msgid "The payment was cancelled. You can try again any time."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:96
+msgid "Package added to your account."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:97
+msgid "Job updated."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:98
+msgid "Job updated. The changes go live after a quick review."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:99
+msgid "Marked as filled. The job stays visible but no longer takes applications."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:100
+msgid "The job takes applications again."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:101
+msgid "Job deleted."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:102
+#: build/admin.js:8
+msgid "Company saved."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:103
+msgid "Welcome! Your account is ready."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:138
+msgid "No jobs yet"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:138
+msgid "Post your first job. The writing assistant helps you write it in a few minutes."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:141
+msgid "Your jobs"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:141
+#: includes/Front/Employer_Dashboard.php:146
+#: includes/Privacy_Data.php:91
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/admin.js:6
+#: build/admin.js:11
+#: build/admin.js:15
+msgid "Status"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:141
+#: includes/Front/Employer_Dashboard.php:148
+#: build/admin.js:1
+msgid "Views"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:141
+#: includes/Front/Employer_Dashboard.php:149
+#: build/admin.js:3
+msgid "Expires"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:141
+#: build/admin.js:1
+msgid "Actions"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:145
+#: includes/Front/Templates.php:199
+#: build/admin.js:3
+msgid "Filled"
+msgstr ""
+
+#. translators: %d: open jobs
+#: includes/Front/Employer_Dashboard.php:151
+#: includes/Front/Employer_Dashboard.php:278
+#: includes/Front/Submission.php:303
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/admin.js:11
+msgid "Edit"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:153
+msgid "Reopen"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:153
+msgid "Mark filled"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:155
+msgid "Relist"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:157
+msgid "Publish"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:159
+msgid "Delete this job and its applications?"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:180
+msgid "Applications appear here as soon as candidates apply to your jobs."
+msgstr ""
+
+#. translators: 1: job title, 2: number of applications
+#: includes/Front/Employer_Dashboard.php:197
+#, php-format
+msgid "%1$s (%2$d)"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:199
+msgid "Show"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:200
+msgid "Loading applications…"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:211
+msgid "No applications in this stage."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:212
+msgid "No applications for this job yet."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:213
+#: build/admin.js:6
+msgid "Move to"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:214
+#: includes/Privacy_Data.php:95
+#: build/admin.js:1
+#: build/admin.js:8
+msgid "Applied"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:215
+msgid "Open application"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:216
+#: build/admin.js:1
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "Match"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:217
+msgid "Score all applications"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:218
+#: build/admin.js:6
+msgid "Scoring…"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:219
+msgid "Board order"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:220
+#: build/admin.js:6
+msgid "Best match first"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:221
+msgid "Sort cards"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:222
+#: build/admin.js:6
+msgid "Calculate match"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:223
+msgid "Recalculate"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:224
+msgid "Decision support only: review every application yourself. The score never moves or rejects anyone."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:225
+msgid "Scored on skills, experience, role and location fit only. Names, contact details and personal characteristics are not used."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:226
+#: build/admin.js:6
+msgid "Strengths"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:227
+#: build/admin.js:6
+msgid "Gaps to explore"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:231
+#: build/admin.js:6
+msgid "Role fit"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:234
+#: includes/Front/Templates.php:588
+#: build/admin.js:1
+#: build/admin.js:6
+msgid "Resume"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:235
+msgid "Download"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:236
+#: includes/Privacy_Data.php:87
+#: build/admin.js:6
+msgid "Cover letter"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:241
+#: build/admin.js:6
+msgid "Notes & activity"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:242
+#: build/admin.js:6
+msgid "Add a private note"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:243
+#: build/admin.js:6
+msgid "Save note"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:244
+#: build/admin.js:6
+msgid "Your rating"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:245
+#: build/admin.js:1
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "Stage"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:246
+#: build/admin.js:6
+msgid "Email the candidate about this change"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:247
+#: build/admin.js:6
+msgid "Personal message (optional)"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:248
+#: build/admin.js:6
+msgid "Update stage"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:249
+#: includes/Front/Frontend.php:154
+#: build/admin.js:1
+msgid "Close"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:250
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "now"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:251
+msgid "years of experience"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:252
+msgid "Moved."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:253
+#: includes/Front/Frontend.php:138
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:255
+#: includes/Privacy_Data.php:83
+msgid "Phone"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:257
+msgid "Rule-based score"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:258
+msgid "Score with explanation"
+msgstr ""
+
+#. translators: %d: stars
+#: includes/Front/Employer_Dashboard.php:259
+#: build/admin.js:6
+#, php-format,js-format
+msgid "%d of 5 stars"
+msgstr ""
+
+#. translators: %d: open jobs
+#. translators: %d: number of open jobs
+#. translators: %d: number of jobs
+#: includes/Front/Employer_Dashboard.php:278
+#: includes/Front/Templates.php:475
+#: includes/Front/Templates.php:630
+#: includes/Front/Templates.php:667
+#, php-format
+msgid "%d open job"
+msgid_plural "%d open jobs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Front/Employer_Dashboard.php:284
+msgid "Edit company"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:284
+msgid "Add a company"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:289
+#: includes/Front/Submission.php:148
+#: build/admin.js:8
+msgid "Company name"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:290
+#: includes/Front/Submission.php:149
+#: includes/Front/Templates.php:478
+#: includes/Front/Templates.php:617
+#: build/admin.js:8
+msgid "Website"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:291
+#: includes/Front/Submission.php:151
+#: build/admin.js:8
+msgid "Tagline"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:292
+#: build/admin.js:8
+msgid "Industry"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:293
+msgid "Company size"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:295
+#: includes/Front/Submission.php:163
+#: build/admin.js:4
+#: build/admin.js:8
+msgid "Not specified"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:297
+#: build/admin.js:8
+msgid "Headquarters"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:298
+#: includes/Front/Submission.php:152
+#: build/admin.js:8
+msgid "About the company"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:299
+msgid "Logo"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:299
+#: includes/Front/Submission.php:153
+msgid "Square PNG, JPG or WebP, up to 2 MB."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:300
+#: build/admin.js:8
+msgid "Save company"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:300
+#: includes/Front/Frontend.php:153
+#: includes/Front/Submission.php:259
+#: build/admin.js:1
+#: build/admin.js:4
+#: build/admin.js:8
+#: build/admin.js:9
+#: build/admin.js:11
+msgid "Cancel"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:313
+msgid "Your packages"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:316
+#: build/admin.js:15
+msgid "Active"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:318
+msgid "Used up"
+msgstr ""
+
+#. translators: 1: used, 2: limit
+#: includes/Front/Employer_Dashboard.php:323
+#, php-format
+msgid "%1$d of %2$d job posts used"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:327
+msgid "You have no packages yet. Buy one below or when you post a job."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:331
+msgid "Buy job posts in advance"
+msgstr ""
+
+#. translators: 1: job posts, 2: days
+#: includes/Front/Employer_Dashboard.php:334
+#: includes/Front/Submission.php:348
+#, php-format
+msgid "%1$d job post · %2$d days"
+msgid_plural "%1$d job posts · %2$d days each"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: job posts, 2: days
+#: includes/Front/Employer_Dashboard.php:334
+msgid "Buy"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:339
+msgid "Payment history"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:341
+msgid "Paid"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:341
+msgid "Pending"
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:361
+msgid "You cannot change this job."
+msgstr ""
+
+#: includes/Front/Employer_Dashboard.php:399
+msgid "You cannot edit this company."
+msgstr ""
+
+#: includes/Front/Forms.php:29
+#: includes/Front/Templates.php:592
+msgid "Leave this empty"
+msgstr ""
+
+#: includes/Front/Forms.php:45
+#: includes/Rest/Public_Controller.php:184
+msgid "Your submission looks like spam."
+msgstr ""
+
+#: includes/Front/Forms.php:50
+msgid "Please take a moment to fill in the form, then try again."
+msgstr ""
+
+#: includes/Front/Forms.php:58
+msgid "Too many submissions. Please wait a minute."
+msgstr ""
+
+#: includes/Front/Frontend.php:139
+msgid "Loading…"
+msgstr ""
+
+#: includes/Front/Frontend.php:140
+msgid "Sending your application…"
+msgstr ""
+
+#: includes/Front/Frontend.php:141
+#: includes/Front/Templates.php:417
+#: includes/Rest/Public_Controller.php:238
+msgid "Your application was sent. Good luck!"
+msgstr ""
+
+#: includes/Front/Frontend.php:142
+#: includes/Rest/Public_Controller.php:187
+msgid "Please confirm that we may share your application with the employer."
+msgstr ""
+
+#: includes/Front/Frontend.php:143
+msgid "Please fill in the required fields."
+msgstr ""
+
+#: includes/Front/Frontend.php:144
+msgid "The file is too large."
+msgstr ""
+
+#: includes/Front/Frontend.php:145
+msgid "Saved"
+msgstr ""
+
+#: includes/Front/Frontend.php:146
+msgid "Get these jobs by email"
+msgstr ""
+
+#: includes/Front/Frontend.php:147
+msgid "We will email you new jobs that match this search. You can unsubscribe at any time."
+msgstr ""
+
+#: includes/Front/Frontend.php:155
+msgid "Alert saved. We will email you when new jobs match."
+msgstr ""
+
+#: includes/Front/Frontend.php:156
+msgid "Check your inbox and confirm the alert."
+msgstr ""
+
+#: includes/Front/Frontend.php:157
+msgid "Are you sure?"
+msgstr ""
+
+#: includes/Front/Frontend.php:244
+msgid "All job types"
+msgstr ""
+
+#: includes/Front/Frontend.php:264
+msgid "That link is no longer valid."
+msgstr ""
+
+#: includes/Front/Frontend.php:416
+msgid "Post a Job"
+msgstr ""
+
+#: includes/Front/Frontend.php:417
+msgid "Employer Dashboard"
+msgstr ""
+
+#: includes/Front/Frontend.php:418
+msgid "Candidate Dashboard"
+msgstr ""
+
+#: includes/Front/Submission.php:68
+msgid "Log in or create a free employer account to post jobs and manage applications."
+msgstr ""
+
+#: includes/Front/Submission.php:77
+#: includes/Front/Submission.php:442
+msgid "You cannot edit this job."
+msgstr ""
+
+#: includes/Front/Submission.php:80
+#: build/admin.js:4
+msgid "Job details"
+msgstr ""
+
+#: includes/Front/Submission.php:81
+msgid "Preview"
+msgstr ""
+
+#: includes/Front/Submission.php:88
+msgid "Steps"
+msgstr ""
+
+#: includes/Front/Submission.php:135
+msgid "Hiring company"
+msgstr ""
+
+#: includes/Front/Submission.php:140
+msgid "+ Add a new company"
+msgstr ""
+
+#: includes/Front/Submission.php:151
+msgid "What does the company do, in one line?"
+msgstr ""
+
+#: includes/Front/Submission.php:153
+msgid "Logo (optional)"
+msgstr ""
+
+#: includes/Front/Submission.php:158
+msgid "The job"
+msgstr ""
+
+#: includes/Front/Submission.php:159
+msgid "e.g. Senior Product Designer"
+msgstr ""
+
+#: includes/Front/Submission.php:163
+#: build/admin.js:4
+msgid "Experience level"
+msgstr ""
+
+#: includes/Front/Submission.php:170
+#: includes/Front/Templates.php:312
+#: build/admin.js:4
+msgid "Workplace"
+msgstr ""
+
+#: includes/Front/Submission.php:179
+msgid "Remote region or office address"
+msgstr ""
+
+#: includes/Front/Submission.php:179
+msgid "e.g. Europe time zones"
+msgstr ""
+
+#: includes/Front/Submission.php:182
+#: build/admin.js:4
+msgid "Salary"
+msgstr ""
+
+#: includes/Front/Submission.php:184
+msgid "Minimum"
+msgstr ""
+
+#: includes/Front/Submission.php:185
+msgid "Maximum"
+msgstr ""
+
+#: includes/Front/Submission.php:186
+#: build/admin.js:4
+msgid "Currency"
+msgstr ""
+
+#: includes/Front/Submission.php:187
+#: build/admin.js:1
+#: build/admin.js:4
+msgid "Period"
+msgstr ""
+
+#: includes/Front/Submission.php:193
+msgid "Do not show the salary publicly (jobs with a salary get more applicants)"
+msgstr ""
+
+#: includes/Front/Submission.php:195
+msgid "e.g. Figma, User research, Prototyping"
+msgstr ""
+
+#: includes/Front/Submission.php:195
+msgid "Separate skills with commas. They power search and candidate matching."
+msgstr ""
+
+#: includes/Front/Submission.php:199
+#: build/admin.js:4
+msgid "Description"
+msgstr ""
+
+#: includes/Front/Submission.php:200
+msgid "Writing your job ad… this can take up to 30 seconds."
+msgstr ""
+
+#: includes/Front/Submission.php:200
+msgid "Building the outline…"
+msgstr ""
+
+#: includes/Front/Submission.php:200
+msgid "Use this description"
+msgstr ""
+
+#: includes/Front/Submission.php:200
+msgid "Discard"
+msgstr ""
+
+#: includes/Front/Submission.php:200
+msgid "Description added. Review and edit it below."
+msgstr ""
+
+#: includes/Front/Submission.php:200
+msgid "No exclusionary wording found."
+msgstr ""
+
+#: includes/Front/Submission.php:200
+msgid "Replace"
+msgstr ""
+
+#: includes/Front/Submission.php:201
+msgid "Writing assistant"
+msgstr ""
+
+#: includes/Front/Submission.php:201
+msgid "Quick outline"
+msgstr ""
+
+#: includes/Front/Submission.php:201
+msgid "Write a few notes and get a clear, inclusive job ad to review."
+msgstr ""
+
+#: includes/Front/Submission.php:201
+msgid "Write notes as lines starting with \"-\" and we turn them into a structured job ad."
+msgstr ""
+
+#: includes/Front/Submission.php:202
+#: build/admin.js:4
+msgid "Notes about the role"
+msgstr ""
+
+#: includes/Front/Submission.php:202
+msgid ""
+"What the person will do, must-have skills, team, benefits…\n"
+"- Design the onboarding flow\n"
+"- 3+ years in product design\n"
+"- Remote budget, 30 days holiday"
+msgstr ""
+
+#: includes/Front/Submission.php:205
+#: build/admin.js:4
+msgid "Tone"
+msgstr ""
+
+#: includes/Front/Submission.php:207
+#: build/admin.js:4
+#: build/admin.js:15
+msgid "Professional"
+msgstr ""
+
+#: includes/Front/Submission.php:208
+#: build/admin.js:4
+#: build/admin.js:15
+msgid "Friendly"
+msgstr ""
+
+#: includes/Front/Submission.php:209
+#: build/admin.js:4
+#: build/admin.js:15
+msgid "Startup"
+msgstr ""
+
+#: includes/Front/Submission.php:210
+#: build/admin.js:4
+#: build/admin.js:15
+msgid "Formal"
+msgstr ""
+
+#: includes/Front/Submission.php:213
+msgid "Draft it for me"
+msgstr ""
+
+#: includes/Front/Submission.php:213
+#: build/admin.js:4
+msgid "Build outline"
+msgstr ""
+
+#: includes/Front/Submission.php:214
+msgid "Check wording"
+msgstr ""
+
+#: includes/Front/Submission.php:222
+#: build/admin.js:4
+msgid "Job description"
+msgstr ""
+
+#: includes/Front/Submission.php:244
+#: build/admin.js:6
+msgid "How to apply"
+msgstr ""
+
+#: includes/Front/Submission.php:246
+msgid "On this site"
+msgstr ""
+
+#: includes/Front/Submission.php:247
+msgid "On our website"
+msgstr ""
+
+#: includes/Front/Submission.php:248
+#: build/admin.js:6
+msgid "By email"
+msgstr ""
+
+#: includes/Front/Submission.php:251
+#: build/admin.js:6
+msgid "Application link"
+msgstr ""
+
+#: includes/Front/Submission.php:252
+msgid "Email for applications"
+msgstr ""
+
+#: includes/Front/Submission.php:252
+msgid "Optional for on-site applications: we notify this address"
+msgstr ""
+
+#: includes/Front/Submission.php:254
+msgid "Application deadline (optional)"
+msgstr ""
+
+#: includes/Front/Submission.php:258
+msgid "Save changes"
+msgstr ""
+
+#: includes/Front/Submission.php:258
+msgid "Preview job"
+msgstr ""
+
+#: includes/Front/Submission.php:276
+#: build/admin.js:13
+msgid "Choose…"
+msgstr ""
+
+#: includes/Front/Submission.php:303
+msgid "This is how candidates will see your job."
+msgstr ""
+
+#: includes/Front/Submission.php:303
+msgid "Continue"
+msgstr ""
+
+#: includes/Front/Submission.php:320
+msgid "This job already has a package."
+msgstr ""
+
+#: includes/Front/Submission.php:320
+msgid "Go to your dashboard"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Front/Submission.php:327
+#, php-format
+msgid "Relist \"%s\""
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Front/Submission.php:327
+#, php-format
+msgid "Choose how to publish \"%s\""
+msgstr ""
+
+#: includes/Front/Submission.php:330
+msgid "Use a package you already have"
+msgstr ""
+
+#. translators: 1: remaining posts, 2: days
+#: includes/Front/Submission.php:334
+#, php-format
+msgid "%1$d job post left · %2$d days"
+msgid_plural "%1$d job posts left · %2$d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Front/Submission.php:340
+msgid "Or buy a new package"
+msgstr ""
+
+#: includes/Front/Submission.php:340
+msgid "Choose a package"
+msgstr ""
+
+#: includes/Front/Submission.php:344
+msgid "Most popular"
+msgstr ""
+
+#: includes/Front/Submission.php:346
+msgid "Free"
+msgstr ""
+
+#: includes/Front/Submission.php:350
+msgid "Featured at the top of search"
+msgstr ""
+
+#: includes/Front/Submission.php:361
+msgid "No packages are available. Please contact the site owner."
+msgstr ""
+
+#: includes/Front/Submission.php:365
+msgid "Paid packages are paid securely by card on the next page."
+msgstr ""
+
+#: includes/Front/Submission.php:366
+msgid "Paid packages go to checkout on the next page."
+msgstr ""
+
+#: includes/Front/Submission.php:367
+msgid "For paid packages we email you payment instructions. Your job goes live once the payment is confirmed."
+msgstr ""
+
+#: includes/Front/Submission.php:370
+msgid "Submit job"
+msgstr ""
+
+#: includes/Front/Submission.php:370
+msgid "Back"
+msgstr ""
+
+#: includes/Front/Submission.php:384
+msgid "The logo upload failed. Try again."
+msgstr ""
+
+#: includes/Front/Submission.php:387
+msgid "The logo must be smaller than 2 MB."
+msgstr ""
+
+#: includes/Front/Submission.php:408
+msgid "Upload a PNG, JPG or WebP image."
+msgstr ""
+
+#: includes/Front/Submission.php:437
+msgid "Log in to post a job."
+msgstr ""
+
+#: includes/Front/Submission.php:464
+msgid "Choose one of your companies."
+msgstr ""
+
+#: includes/Front/Submission.php:477
+msgid "Add a job description (the writing assistant can help)."
+msgstr ""
+
+#: includes/Front/Submission.php:515
+msgid "You cannot publish this job."
+msgstr ""
+
+#: includes/Front/Submission.php:521
+#: includes/Front/Submission.php:541
+msgid "Choose a package."
+msgstr ""
+
+#: includes/Front/Templates.php:99
+msgid "Today"
+msgstr ""
+
+#. translators: %s: human time difference
+#: includes/Front/Templates.php:102
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#. translators: %s: date
+#: includes/Front/Templates.php:139
+#, php-format
+msgid "Apply by %s"
+msgstr ""
+
+#: includes/Front/Templates.php:168
+msgid "Log in to save this job"
+msgstr ""
+
+#: includes/Front/Templates.php:171
+#: build/admin.js:4
+msgid "Save job"
+msgstr ""
+
+#. translators: %s: skills
+#: includes/Front/Templates.php:192
+#, php-format
+msgid "Matches your skills: %s"
+msgstr ""
+
+#: includes/Front/Templates.php:298
+msgid "Your job alert is confirmed. We will email you when new jobs match."
+msgstr ""
+
+#: includes/Front/Templates.php:299
+msgid "You are unsubscribed from that job alert."
+msgstr ""
+
+#: includes/Front/Templates.php:304
+#: includes/Front/Templates.php:703
+msgid "Job title, skill or company"
+msgstr ""
+
+#: includes/Front/Templates.php:309
+msgid "Filters"
+msgstr ""
+
+#: includes/Front/Templates.php:311
+msgid "Any type"
+msgstr ""
+
+#: includes/Front/Templates.php:312
+#: build/block.js:1
+msgid "Any workplace"
+msgstr ""
+
+#: includes/Front/Templates.php:317
+msgid "Minimum salary"
+msgstr ""
+
+#: includes/Front/Templates.php:317
+msgid "Any salary"
+msgstr ""
+
+#: includes/Front/Templates.php:322
+msgid "Date posted"
+msgstr ""
+
+#: includes/Front/Templates.php:322
+msgid "Any time"
+msgstr ""
+
+#: includes/Front/Templates.php:324
+msgid "Last 24 hours"
+msgstr ""
+
+#: includes/Front/Templates.php:325
+#: build/admin.js:1
+msgid "Last 7 days"
+msgstr ""
+
+#: includes/Front/Templates.php:326
+#: build/admin.js:1
+msgid "Last 30 days"
+msgstr ""
+
+#: includes/Front/Templates.php:331
+msgid "Clear filters"
+msgstr ""
+
+#. translators: %s: number of jobs
+#: includes/Front/Templates.php:349
+#, php-format
+msgid "%s job"
+msgid_plural "%s jobs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Front/Templates.php:352
+msgid "Email me jobs like these"
+msgstr ""
+
+#: includes/Front/Templates.php:354
+#: build/admin.js:1
+msgid "Sort by"
+msgstr ""
+
+#: includes/Front/Templates.php:354
+msgid "Newest first"
+msgstr ""
+
+#: includes/Front/Templates.php:354
+msgid "Highest salary"
+msgstr ""
+
+#: includes/Front/Templates.php:357
+#: build/admin.js:3
+msgid "No jobs match your search"
+msgstr ""
+
+#: includes/Front/Templates.php:357
+msgid "Try fewer filters or a different keyword. You can also create an alert and we will email you when a match is posted."
+msgstr ""
+
+#: includes/Front/Templates.php:394
+msgid "Job pages"
+msgstr ""
+
+#: includes/Front/Templates.php:396
+msgid "Previous"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: includes/Front/Templates.php:399
+#, php-format
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: includes/Front/Templates.php:401
+msgid "Next"
+msgstr ""
+
+#: includes/Front/Templates.php:422
+msgid "This job is waiting for review and is not public yet."
+msgstr ""
+
+#: includes/Front/Templates.php:423
+msgid "Preview: this job is a draft and is not public yet."
+msgstr ""
+
+#: includes/Front/Templates.php:424
+msgid "This job is waiting for payment and is not public yet."
+msgstr ""
+
+#: includes/Front/Templates.php:425
+msgid "This job has expired."
+msgstr ""
+
+#. translators: %s: time ago
+#: includes/Front/Templates.php:436
+#, php-format
+msgid "Posted %s"
+msgstr ""
+
+#: includes/Front/Templates.php:439
+#: build/admin.js:6
+msgid "Position filled"
+msgstr ""
+
+#: includes/Front/Templates.php:441
+msgid "Apply now"
+msgstr ""
+
+#. translators: %s: company size
+#. translators: %s: size
+#: includes/Front/Templates.php:464
+#: includes/Front/Templates.php:611
+#, php-format
+msgid "%s people"
+msgstr ""
+
+#: includes/Front/Templates.php:485
+msgid "Similar jobs"
+msgstr ""
+
+#: includes/Front/Templates.php:534
+msgid "Apply for this job"
+msgstr ""
+
+#. translators: %d: number of applications
+#: includes/Front/Templates.php:537
+#, php-format
+msgid "You posted this job. It has %d application."
+msgid_plural "You posted this job. It has %d applications."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of applications
+#: includes/Front/Templates.php:537
+msgid "Review applications"
+msgstr ""
+
+#: includes/Front/Templates.php:545
+msgid "This employer takes applications on their own website."
+msgstr ""
+
+#: includes/Front/Templates.php:545
+msgid "Apply on company site"
+msgstr ""
+
+#. translators: %s: job title
+#: includes/Front/Templates.php:549
+#, php-format
+msgid "Application: %s"
+msgstr ""
+
+#: includes/Front/Templates.php:550
+msgid "Send your resume and a short note by email."
+msgstr ""
+
+#: includes/Front/Templates.php:550
+msgid "Apply by email"
+msgstr ""
+
+#: includes/Front/Templates.php:565
+msgid "You have applied for this job."
+msgstr ""
+
+#: includes/Front/Templates.php:568
+msgid "Log in or create a free account to apply."
+msgstr ""
+
+#: includes/Front/Templates.php:578
+msgid "Your profile and resume are shared with the employer."
+msgstr ""
+
+#: includes/Front/Templates.php:578
+msgid "Edit profile"
+msgstr ""
+
+#: includes/Front/Templates.php:580
+#: includes/Front/Templates.php:585
+msgid "Phone (optional)"
+msgstr ""
+
+#: includes/Front/Templates.php:583
+msgid "Full name"
+msgstr ""
+
+#: includes/Front/Templates.php:587
+msgid "Cover letter (optional)"
+msgstr ""
+
+#: includes/Front/Templates.php:587
+msgid "A few lines about why you are a good fit."
+msgstr ""
+
+#: includes/Front/Templates.php:588
+msgid "Use a different resume (optional)"
+msgstr ""
+
+#: includes/Front/Templates.php:588
+msgid "Resume (optional)"
+msgstr ""
+
+#. translators: %d: megabytes
+#: includes/Front/Templates.php:590
+#, php-format
+msgid "PDF, Word (.docx) or text, up to %d MB."
+msgstr ""
+
+#: includes/Front/Templates.php:591
+msgid "I agree that my application is shared with this employer."
+msgstr ""
+
+#: includes/Front/Templates.php:594
+msgid "Send application"
+msgstr ""
+
+#: includes/Front/Templates.php:596
+msgid "Have an account?"
+msgstr ""
+
+#: includes/Front/Templates.php:596
+msgid "Log in to apply with your profile"
+msgstr ""
+
+#. translators: %s: year
+#: includes/Front/Templates.php:611
+#, php-format
+msgid "Founded %s"
+msgstr ""
+
+#: includes/Front/Templates.php:638
+msgid "No open jobs right now."
+msgstr ""
+
+#: includes/Front/Templates.php:661
+msgid "No companies yet."
+msgstr ""
+
+#: includes/Front/Templates.php:703
+#: build/admin.js:3
+#: build/admin.js:8
+#: build/admin.js:15
+msgid "Search"
+msgstr ""
+
+#: includes/Privacy_Data.php:27
+#: includes/Privacy_Data.php:28
+msgid "Job applications and profile"
+msgstr ""
+
+#: includes/Privacy_Data.php:39
+msgid "When you apply for a job, we share your application (name, email, phone, cover letter, profile and resume file) with the employer who posted it. Resume files are stored privately and are only available to you, that employer and site administrators. If DEV3 AI features are enabled, your resume text may be sent to Google Gemini to fill in your profile, and an anonymised version of your profile (skills, experience and education, without your name, contact details or any personal characteristics) may be compared with the job to give the employer a match score. Match scores are decision support only; people make every hiring decision."
+msgstr ""
+
+#: includes/Privacy_Data.php:71
+msgid "Job applications"
+msgstr ""
+
+#: includes/Privacy_Data.php:79
+#: build/admin.js:11
+msgid "Name"
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:453
+#: includes/Rest/Employer_Controller.php:245
+msgid "Write a note first."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:540
+msgid "Candidate not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:619
+msgid "Unknown list."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:624
+msgid "Enter a name."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:647
+#: includes/Rest/Employer_Controller.php:318
+msgid "Not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:694
+msgid "Choose an employer and a package."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:807
+#: includes/Rest/Candidate_Controller.php:82
+msgid "Choose a file to upload."
+msgstr ""
+
+#: includes/Rest/Candidate_Controller.php:78
+msgid "Too many uploads. Please wait a moment."
+msgstr ""
+
+#: includes/Rest/Controller.php:28
+msgid "Please log in first."
+msgstr ""
+
+#. translators: %d: application id
+#: includes/Rest/Employer_Controller.php:85
+#, php-format
+msgid "Candidate #%d"
+msgstr ""
+
+#: includes/Rest/Employer_Controller.php:259
+msgid "Match scores are turned off on this site."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:89
+msgid "Log in to apply for this job."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:102
+msgid "Job alerts are turned off."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request cancelled."
+msgstr ""
+
+#: build/admin.js:1
+msgid "You appear to be offline."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your internet connection, then try again."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Could not reach your WordPress site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your connection or reload the editor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your session has expired."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your work and reload the page."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generating…"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:4
+msgid "Generate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:6
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused: monthly budget reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adjust the cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try again"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use a hex colour like #4f46e5."
+msgstr ""
+
+#: build/admin.js:1
+msgid "picker"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Queued"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Running"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancelled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Background job"
+msgstr ""
+
+#. translators: 1: processed, 2: total, 3: percent
+#: build/admin.js:1
+#, js-format
+msgid "%1$s of %2$s processed (%3$s%%)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Starting…"
+msgstr ""
+
+#. translators: %s: failed count
+#: build/admin.js:1
+#, js-format
+msgid "%s failed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Retry failed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show failed items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated AI spend this month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI off"
+msgstr ""
+
+#. translators: %s: cap
+#: build/admin.js:1
+#, js-format
+msgid "of %s cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI turned off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused · cap reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Near cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget used"
+msgstr ""
+
+#. translators: 1: requests, 2: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s requests · %2$s tokens"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:1
+#, js-format
+msgid "resets %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set a monthly cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose from list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom model ID…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Gemini API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a free key in Google AI Studio, paste it here and click “Validate & save”. The key is encrypted in your database and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get an API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The key is defined by the DEV3JB_GEMINI_API_KEY constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key"
+msgstr ""
+
+#. translators: %d: number of models
+#: build/admin.js:1
+#, js-format
+msgid "Connected — %d models available to this key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Validate & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "OpenSSL is not available on this server, so the key is only obfuscated. Consider defining DEV3JB_GEMINI_API_KEY in wp-config.php instead."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models & generation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast is used for most tasks; Pro for complex, long-form or structured work."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refresh models"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Engine settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save engine settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-flash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for image generation. Default: gemini-2.5-flash-image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embedding model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for semantic search. Default: gemini-embedding-001"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Temperature"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lower = focused and consistent, higher = more creative (0–1)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max output tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upper limit per answer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reasoning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Low” keeps generations fast and cheap; “Auto” lets the model think longer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low (fast)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto (model decides)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Costs are estimated from token counts and Google’s list prices. Check exact billing in Google AI Studio."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget and safety settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI pauses when the estimated spend this month reaches the cap. 0 = no cap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to stop every AI call. The plugin keeps working without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kill switch for visitor-facing AI. Visitors get the non-AI fallback."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cache AI results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reuse answers for identical requests to save tokens."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mask personal data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace emails, phone and card numbers before text is sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pagination"
+msgstr ""
+
+#. translators: 1: first row, 2: last row, 3: total rows
+#: build/admin.js:1
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: build/admin.js:1
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next page"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:11
+msgid "Nothing here yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Est. cost"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Token counts come from the AI provider’s usage metadata; costs are estimates. Check exact billing in Google AI Studio / Cloud Console."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 90 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Total tokens"
+msgstr ""
+
+#. translators: 1: input, 2: output
+#: build/admin.js:1
+#, js-format
+msgid "%1$s in · %2$s out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Avg. response"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Errors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day chart"
+msgstr ""
+
+#. translators: 1: date, 2: requests, 3: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s — %2$s requests, %3$s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests in this period yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage appears here as soon as an AI feature runs."
+msgstr ""
+
+#: build/admin.js:1
+msgid "By task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By user"
+msgstr ""
+
+#: build/admin.js:1
+msgid "User"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests logged yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time (s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Plugin sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side by side"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Current"
+msgstr ""
+
+#. translators: %s: token count
+#: build/admin.js:1
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Regenerate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done editing"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The JSON is not valid. Fix it or regenerate."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Trash"
+msgstr ""
+
+#. translators: %d: score 0-100
+#: build/admin.js:1
+#, js-format
+msgid "%d%% match"
+msgstr ""
+
+#. translators: 1: total, 2: days
+#: build/admin.js:1
+#, js-format
+msgid "%1$d applications in the last %2$d days"
+msgstr ""
+
+#. translators: 1: date, 2: count
+#: build/admin.js:1
+#, js-format
+msgid "%1$s: %2$d applications"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:15
+msgid "Dashboard"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your job board at a glance: jobs, applications, revenue and what needs your attention."
+msgstr ""
+
+#: build/admin.js:1
+msgid "View job board"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Everything works without AI. Add a Google Gemini API key to turn on the job description writer, resume parsing and explained match scores."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Live jobs"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Waiting for review"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Applications (30 days)"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "%d in the last 7 days"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:11
+msgid "Revenue (30 days)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Applications per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 14 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pipeline"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All open applications by stage"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Latest applications"
+msgstr ""
+
+#: build/admin.js:1
+msgid "They appear here as soon as candidates apply."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Needs your review"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All caught up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No jobs are waiting for approval."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submitted"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Most applied jobs"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No live jobs yet"
+msgstr ""
+
+#. translators: %d: number of jobs
+#: build/admin.js:3
+#, js-format
+msgid "%d jobs updated."
+msgstr ""
+
+#: build/admin.js:3
+#: build/admin.js:8
+msgid "All"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Drafts"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Every job on your board: approve submissions, feature, expire and edit."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Job status"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Search by title or description…"
+msgstr ""
+
+#: build/admin.js:3
+msgid "All companies"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Bulk actions"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:3
+#, js-format
+msgid "%d selected"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Select all on this page"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Approve / publish"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Unfeature"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Expire"
+msgstr ""
+
+#: build/admin.js:3
+#: build/admin.js:4
+msgid "Move to trash"
+msgstr ""
+
+#: build/admin.js:3
+msgid "No jobs here yet"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Add a job, or let employers post their own from the front end."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Select"
+msgstr ""
+
+#. translators: %s: job
+#: build/admin.js:3
+#, js-format
+msgid "Select %s"
+msgstr ""
+
+#: build/admin.js:3
+#: build/admin.js:6
+msgid "No company"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Type"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Posted"
+msgstr ""
+
+#: build/admin.js:4
+#, js-format
+msgid "Move %d jobs to the trash?"
+msgstr ""
+
+#: build/admin.js:4
+msgid "They disappear from the board. You can restore them from the WordPress trash for 30 days."
+msgstr ""
+
+#: build/admin.js:4
+msgid "Search snippet"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Job saved."
+msgstr ""
+
+#: build/admin.js:4
+msgid "New job"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Untitled job"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Approve & publish"
+msgstr ""
+
+#: build/admin.js:4
+msgid "No location"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Remote region"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Street address (optional)"
+msgstr ""
+
+#: build/admin.js:4
+#: build/admin.js:9
+msgid "Categories"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Separate with commas. Skills drive search and candidate matching."
+msgstr ""
+
+#: build/admin.js:4
+msgid "Hide the salary on the job page"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Write paragraphs, \"## Heading\" for headings and \"- \" for bullet points."
+msgstr ""
+
+#: build/admin.js:4
+msgid "One sentence shown in search results and alerts."
+msgstr ""
+
+#: build/admin.js:4
+msgid "Write with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Turn rough notes into a clear, inclusive job ad. You review every change before it is used."
+msgstr ""
+
+#: build/admin.js:4
+msgid "AI is off, so this builds a structured outline from your notes. Add an API key for full AI writing."
+msgstr ""
+
+#: build/admin.js:4
+msgid "What the person will do, must-have skills, team, benefits… (leave empty to improve the current description)"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Writing…"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Check inclusive language"
+msgstr ""
+
+#: build/admin.js:4
+msgid "DEV3 AI · Job ad draft"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Outline from your notes"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Draft applied. Save the job to publish the changes."
+msgstr ""
+
+#: build/admin.js:4
+msgid "Use this draft"
+msgstr ""
+
+#: build/admin.js:4
+msgid "No exclusionary wording found"
+msgstr ""
+
+#: build/admin.js:4
+msgid "DEV3 AI and the word list found nothing to change."
+msgstr ""
+
+#: build/admin.js:4
+msgid "The built-in word list found nothing to change."
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:4
+#, js-format
+msgid "%d suggestions"
+msgstr ""
+
+#: build/admin.js:4
+msgid "Choose the fixes to apply:"
+msgstr ""
+
+#: build/admin.js:4
+msgid "(remove)"
+msgstr ""
+
+#. translators: %d: number of fixes
+#: build/admin.js:6
+#, js-format
+msgid "%d wording fixes applied. Save the job to keep them."
+msgstr ""
+
+#: build/admin.js:6
+msgid "Apply selected fixes"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Publishing"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Employer account"
+msgstr ""
+
+#: build/admin.js:6
+#: build/admin.js:8
+msgid "Me"
+msgstr ""
+
+#: build/admin.js:6
+msgid "The employer sees and manages applications in their dashboard."
+msgstr ""
+
+#: build/admin.js:6
+msgid "Expires on"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Empty: set from the package or the default duration when it goes live."
+msgstr ""
+
+#: build/admin.js:6
+msgid "Application deadline"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Pinned above other jobs in search."
+msgstr ""
+
+#: build/admin.js:6
+msgid "Stays visible but stops taking applications."
+msgstr ""
+
+#: build/admin.js:6
+msgid "On this site (pipeline)"
+msgstr ""
+
+#: build/admin.js:6
+msgid "External link"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Application email"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Notify this email (optional)"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Open pipeline"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Score all (rules)"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Score all with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Scoring applications"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Application stages"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Drop applications here"
+msgstr ""
+
+#. translators: %s: candidate
+#: build/admin.js:6
+#, js-format
+msgid "Move %s to"
+msgstr ""
+
+#: build/admin.js:6
+msgid "DEV3 AI explanation"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Rule-based"
+msgstr ""
+
+#: build/admin.js:6
+msgid "No score yet."
+msgstr ""
+
+#: build/admin.js:6
+msgid "Decision support only: review every application yourself. Scores use skills, experience, role and location fit; names, contact details and personal characteristics are never used, and a score never moves or rejects anyone."
+msgstr ""
+
+#: build/admin.js:6
+msgid "Recalculate (rules)"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Explain with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Application"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Stage updated."
+msgstr ""
+
+#: build/admin.js:6
+msgid "No resume attached."
+msgstr ""
+
+#. translators: %s: years
+#: build/admin.js:6
+#, js-format
+msgid "%s years of experience"
+msgstr ""
+
+#: build/admin.js:6
+msgid "All jobs"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Move candidates through your hiring stages. Drag cards on a computer, or use \"Move to\" on any device."
+msgstr ""
+
+#: build/admin.js:6
+msgid "Board"
+msgstr ""
+
+#: build/admin.js:6
+msgid "List"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Score all"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Explain all with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:6
+msgid "Match scores are decision support only. They use job-relevant skills, experience, role and location fit; never names, photos, age, gender or other personal characteristics."
+msgstr ""
+
+#. translators: 1: candidate, 2: stage
+#: build/admin.js:8
+#, js-format
+msgid "%1$s moved to %2$s."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Search applications"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Name or email…"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Rating"
+msgstr ""
+
+#: build/admin.js:8
+msgid "No applications here"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Applications from the job pages appear here."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Try the resume parser"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Upload a sample resume (PDF, Word or text) to see what candidates get filled in. The file is deleted right after."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Resume file"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Use DEV3 AI"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Choose a resume file first."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Reading…"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Parse with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Parse without AI"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Read by DEV3 AI"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Read by the built-in parser"
+msgstr ""
+
+#. translators: %s: sections
+#: build/admin.js:8
+#, js-format
+msgid "Filled: %s. Protected attributes (age, gender, photo, nationality…) are never extracted."
+msgstr ""
+
+#: build/admin.js:8
+msgid "nothing"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:15
+msgid "Candidates"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Candidate profiles are private: only the candidate, employers they apply to and site managers can see them."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Search candidates"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Headline…"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Top skills"
+msgstr ""
+
+#. translators: %s: years
+#: build/admin.js:8
+#, js-format
+msgid "%s yrs"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Updated"
+msgstr ""
+
+#: build/admin.js:8
+msgid "No candidate profiles yet"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Candidates create a profile in the candidate dashboard, often by uploading a resume."
+msgstr ""
+
+#: build/admin.js:8
+msgid "No applications yet."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Company profiles appear on every job and get their own page with all open jobs."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Add company"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Open jobs"
+msgstr ""
+
+#: build/admin.js:8
+msgid "No companies yet"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Employers add their company when they post a job, or you can add one here."
+msgstr ""
+
+#: build/admin.js:8
+msgid "New company"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Company logo"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Change logo"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Choose logo"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Contact email"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Size"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Founded"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Owner (employer account)"
+msgstr ""
+
+#: build/admin.js:9
+#, js-format
+msgid "Delete %s?"
+msgstr ""
+
+#: build/admin.js:9
+msgid "The company moves to the trash. Its jobs stay, without a company."
+msgstr ""
+
+#: build/admin.js:9
+msgid "Company moved to the trash."
+msgstr ""
+
+#: build/admin.js:9
+msgid "Locations"
+msgstr ""
+
+#: build/admin.js:9
+#: build/admin.js:15
+msgid "Categories & types"
+msgstr ""
+
+#: build/admin.js:9
+msgid "The vocabularies employers pick from and candidates filter by."
+msgstr ""
+
+#: build/admin.js:9
+msgid "Lists"
+msgstr ""
+
+#. translators: %s: list
+#: build/admin.js:9
+#, js-format
+msgid "Add to %s"
+msgstr ""
+
+#. translators: %s: term
+#: build/admin.js:11
+#, js-format
+msgid "\"%s\" added."
+msgstr ""
+
+#: build/admin.js:11
+msgid "Parent"
+msgstr ""
+
+#: build/admin.js:11
+msgid "None (top level)"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Google for Jobs type"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Add"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Schema type"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Slug"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Save"
+msgstr ""
+
+#: build/admin.js:11
+#: build/admin.js:15
+msgid "Packages & payments"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Sell job posts: one-off posts, featured upgrades or bundles. Free packages work too."
+msgstr ""
+
+#: build/admin.js:11
+msgid "Pending payments"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Active gateway"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Offline"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Add package"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Packages saved."
+msgstr ""
+
+#: build/admin.js:11
+msgid "Save packages"
+msgstr ""
+
+#: build/admin.js:11
+msgid "New package"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Hidden"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Short description"
+msgstr ""
+
+#. translators: %s: currency
+#: build/admin.js:11
+#, js-format
+msgid "Price (%s)"
+msgstr ""
+
+#: build/admin.js:11
+msgid "0 = free"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Job posts"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Days live"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Featured (pinned to the top)"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Highlight as \"Most popular\""
+msgstr ""
+
+#: build/admin.js:11
+msgid "Available to employers"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Payment gateway"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Payment settings saved."
+msgstr ""
+
+#: build/admin.js:11
+msgid "Save payment settings"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Take payments with"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Offline / bank transfer (you mark payments paid)"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Stripe Checkout (cards, Apple Pay, Google Pay)"
+msgstr ""
+
+#: build/admin.js:11
+msgid "WooCommerce checkout"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Payment instructions emailed to employers"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Stripe is in test mode."
+msgstr ""
+
+#: build/admin.js:11
+msgid "Stripe is live."
+msgstr ""
+
+#: build/admin.js:11
+msgid "Stripe secret key"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Webhook signing secret"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Webhook URL (event: checkout.session.completed):"
+msgstr ""
+
+#: build/admin.js:11
+msgid "WooCommerce is not active. Employers will get offline payment instructions until it is."
+msgstr ""
+
+#: build/admin.js:11
+msgid "Each package becomes a hidden virtual product. A paid order (processing or completed) activates the package. Works with the block checkout and HPOS."
+msgstr ""
+
+#: build/admin.js:11
+msgid "Payments"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Amount"
+msgstr ""
+
+#: build/admin.js:11
+msgid "Gateway"
+msgstr ""
+
+#. translators: %d: payment id
+#: build/admin.js:13
+#, js-format
+msgid "Payment #%d marked as paid. The package is active."
+msgstr ""
+
+#: build/admin.js:13
+msgid "Mark paid"
+msgstr ""
+
+#: build/admin.js:13
+msgid "No payments yet"
+msgstr ""
+
+#: build/admin.js:13
+msgid "Give an employer free job posts"
+msgstr ""
+
+#: build/admin.js:13
+msgid "Useful for partners, refunds or trials."
+msgstr ""
+
+#: build/admin.js:13
+msgid "Credits added to the employer account."
+msgstr ""
+
+#: build/admin.js:13
+msgid "Add credits"
+msgstr ""
+
+#: build/admin.js:13
+msgid "Candidates and visitors save searches and get new matching jobs by email, daily or weekly. Guests confirm by email first."
+msgstr ""
+
+#. translators: %d: emails
+#: build/admin.js:15
+#, js-format
+msgid "%d digest emails sent."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Send due digests now"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Frequency"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Waiting for confirmation"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Last checked"
+msgstr ""
+
+#: build/admin.js:15
+msgid "No job alerts yet"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Visitors create alerts from the job board with \"Email me jobs like these\"."
+msgstr ""
+
+#: build/admin.js:15
+msgid "— Not set —"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Settings saved."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Save settings"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Pages, submissions, applications, emails and DEV3 AI features."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Pages"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Created on activation. Each page holds the matching block or shortcode."
+msgstr ""
+
+#: build/admin.js:15
+#: build/block.js:1
+msgid "Job board"
+msgstr ""
+
+#: build/admin.js:15
+#: build/block.js:1
+msgid "Candidate dashboard"
+msgstr ""
+
+#: build/admin.js:15
+#: build/block.js:1
+msgid "Jobs per page"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Default currency"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Default job duration (days)"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Used when a job has no package."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Warn employers before expiry (days)"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Accent colour"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Google for Jobs markup (JobPosting)"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Adds structured data to every live job page."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Visitors can save a search and get new jobs by email."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Employers & submissions"
+msgstr ""
+
+#: build/admin.js:15
+msgid "New jobs"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Wait for my approval"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Go live right away"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Re-review live jobs after the employer edits them"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Let visitors create employer and candidate accounts"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Allow applying without an account"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Guests enter name, email and an optional resume. Rate limited."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Require a resume file"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Maximum file size (MB)"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Resumes are stored in a private folder and only open for the candidate, the employer and you."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Emails"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Admin: job waiting for review"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Admin: new payment"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Employer: new application"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Employer: job live, expiring, expired"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Candidate: application received"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Candidate: stage updates (when the employer ticks \"Email the candidate\")"
+msgstr ""
+
+#: build/admin.js:15
+msgid "DEV3 AI features"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Every feature has a non-AI fallback, so the board keeps working with AI off."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Add a Google Gemini API key in API Config to turn these on."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Job description writer"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Inclusive-language review"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Resume parsing for candidates"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Match explanations"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Score new applications automatically"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Semantic job recommendations"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Default writing tone"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Semantic index:"
+msgstr ""
+
+#: build/admin.js:15
+msgid "jobs"
+msgstr ""
+
+#: build/admin.js:15
+msgid "profiles"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Update index"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Indexing jobs and profiles"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Fairness"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Match scores support decisions; people make them."
+msgstr ""
+
+#: build/admin.js:15
+msgid "What matching never uses"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Name, email, phone, photo, age or date of birth, gender, marital or family status, nationality, ethnicity, religion, disability, health, sexual orientation, union membership, political views and street address are removed before scoring and never sent to AI. Scores never move, hide or reject a candidate."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Show match scores to employers"
+msgstr ""
+
+#: build/admin.js:15
+msgid "When off, only site managers see scores."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Blind screening: hide candidate names on employer pipeline cards"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Employers see \"Candidate #123\" without contact details until they move the application to Interview."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Data"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Delete all job board data when the plugin is deleted"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Jobs, companies, profiles, applications, resume files, payments and settings."
+msgstr ""
+
+#: build/admin.js:15
+msgid "API Config"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Usage Logs"
+msgstr ""
+
+#: build/admin.js:15
+msgid "Connect Google Gemini, pick models and set a monthly AI budget."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Requests, tokens and estimated cost of every DEV3 AI feature."
+msgstr ""
+
+#: build/admin.js:15
+msgid "Made by DEV3 Technologies · AI by Google Gemini, using your own API key."
+msgstr ""
+
+#: build/block.js:1
+msgid "Search box, filters and job results with paging."
+msgstr ""
+
+#: build/block.js:1
+msgid "Show filters"
+msgstr ""
+
+#: build/block.js:1
+msgid "Only this category"
+msgstr ""
+
+#: build/block.js:1
+msgid "Only this job type"
+msgstr ""
+
+#: build/block.js:1
+msgid "Only this workplace"
+msgstr ""
+
+#: build/block.js:1
+msgid "Job search box"
+msgstr ""
+
+#: build/block.js:1
+msgid "A compact search box that opens the job board."
+msgstr ""
+
+#: build/block.js:1
+msgid "Recent jobs"
+msgstr ""
+
+#: build/block.js:1
+msgid "The newest or featured jobs."
+msgstr ""
+
+#: build/block.js:1
+msgid "Number of jobs"
+msgstr ""
+
+#: build/block.js:1
+msgid "Featured only"
+msgstr ""
+
+#: build/block.js:1
+msgid "A grid of hiring companies."
+msgstr ""
+
+#: build/block.js:1
+msgid "Number of companies"
+msgstr ""
+
+#: build/block.js:1
+msgid "Post a job form"
+msgstr ""
+
+#: build/block.js:1
+msgid "Front-end job submission with packages and checkout."
+msgstr ""
+
+#: build/block.js:1
+msgid "Jobs, applications pipeline, companies and packages."
+msgstr ""
+
+#: build/block.js:1
+msgid "Profile and resume, applications, saved jobs, alerts and recommendations."
+msgstr ""

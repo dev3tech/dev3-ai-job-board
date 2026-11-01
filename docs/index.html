@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEV3 AI Job Board &amp; Resume Matcher for WordPress: Documentation</title>
+<style>
+:root { --ink: #1e293b; --mut: #556070; --line: #e2e6ec; --accent: #2563eb; --tint: #f6f7f9; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background: #fff; }
+header { background: linear-gradient(135deg, #1e3a8a, #4f46e5); color: #fff; padding: 40px 16px; }
+header .in, main { max-width: 900px; margin: 0 auto; }
+header h1 { margin: 0 0 8px; font-size: 1.8rem; line-height: 1.2; }
+header p { margin: 0; opacity: .9; }
+nav { border-bottom: 1px solid var(--line); background: var(--tint); padding: 12px 16px; overflow-x: auto; }
+nav ul { list-style: none; margin: 0 auto; padding: 0; display: flex; gap: 16px; max-width: 900px; white-space: nowrap; }
+nav a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: .95rem; }
+main { padding: 24px 16px 64px; }
+h2 { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 1.4rem; }
+h3 { font-size: 1.1rem; margin-top: 28px; }
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .875rem; background: var(--tint); border-radius: 6px; }
+code { padding: 1px 6px; }
+pre { padding: 12px; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .95rem; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--tint); }
+.note { padding: 12px 14px; border-left: 4px solid var(--accent); background: #eff6ff; border-radius: 6px; }
+.warn { border-left-color: #b45309; background: #fffbeb; }
+img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+</style>
+</head>
+<body>
+<header><div class="in"><h1>DEV3 AI Job Board &amp; Resume Matcher for WordPress</h1><p>Version 1.0.0 · Documentation · by DEV3 Technologies</p></div></header>
+<nav><ul>
+<li><a href="#install">Install</a></li><li><a href="#ai">Gemini key</a></li><li><a href="#jobs">Jobs</a></li><li><a href="#employers">Employers</a></li><li><a href="#packages">Packages</a></li><li><a href="#pipeline">Pipeline</a></li><li><a href="#candidates">Candidates</a></li><li><a href="#alerts">Alerts</a></li><li><a href="#aifeatures">DEV3 AI</a></li><li><a href="#fairness">Fairness</a></li><li><a href="#shortcodes">Shortcodes</a></li><li><a href="#hooks">Hooks</a></li><li><a href="#rest">REST API</a></li><li><a href="#faq">FAQ</a></li><li><a href="#changelog">Changelog</a></li>
+</ul></nav>
+<main>
+<p>A complete job board for WordPress: jobs and companies, front-end posting with paid packages, employer and candidate dashboards, an applications pipeline, job alerts and Google for Jobs markup. Optional DEV3 AI features (Google Gemini, your own key) write job ads, read resumes and explain match scores.</p>
+<div class="shots"><img src="screenshots/1-job-board.png" alt="Job board"><img src="screenshots/2-pipeline.png" alt="Pipeline"><img src="screenshots/3-match-score.png" alt="Match score"></div>
+
+<h2 id="install">Installation</h2>
+<ol>
+<li>Requirements: WordPress 6.0+, PHP 7.4+ (tested on 8.3). WooCommerce 8+ only if you want WooCommerce checkout.</li>
+<li>Plugins &gt; Add New &gt; Upload Plugin, choose <code>dev3-ai-job-board.zip</code>, Install, Activate.</li>
+<li>On activation the plugin creates the pages <strong>Jobs</strong>, <strong>Post a Job</strong>, <strong>Employer Dashboard</strong>, <strong>Candidate Dashboard</strong> and <strong>Companies</strong>, the roles <em>Employer</em> and <em>Candidate</em>, and default job types (Full-time, Part-time, Contract, Temporary, Internship, Freelance).</li>
+<li>Add the pages to your menu. Open <strong>DEV3 AI Job Board &gt; Settings</strong> to review moderation, applications and emails.</li>
+<li>Add categories and locations in <strong>Categories &amp; types</strong> (locations can be nested, e.g. Germany &gt; Berlin).</li>
+</ol>
+<p class="note warn">Nginx: resume files are protected by .htaccess on Apache. On Nginx add <code>location ~* /uploads/dev3jb-private/ { deny all; }</code>. Files also have random names.</p>
+
+<h2 id="ai">Google Gemini API key</h2>
+<ol>
+<li>Go to <a href="https://aistudio.google.com/apikey">Google AI Studio</a> and create an API key (there is a free tier; you pay Google for usage above it).</li>
+<li>In WordPress open <strong>DEV3 AI Job Board &gt; API Config</strong>, paste the key, Save, then Test. The key is stored encrypted and never sent to the browser. You can also define <code>DEV3JB_GEMINI_API_KEY</code> in <code>wp-config.php</code>.</li>
+<li>Pick models (defaults: gemini-2.5-flash and gemini-2.5-pro), set a monthly budget and the visitor-AI switch. Usage Logs show requests, tokens and estimated cost.</li>
+</ol>
+<p>Without a key every feature still works with its non-AI fallback.</p>
+
+<h2 id="jobs">Jobs, companies and the job board</h2>
+<ul>
+<li><strong>Job fields:</strong> title, description, company, categories, job type, location, workplace (on-site, hybrid, remote + region), salary range, currency and period (or hidden), experience level, skills, how to apply (on this site, external link, email), expiry date, application deadline, featured, filled.</li>
+<li><strong>Statuses:</strong> Live, In review, Draft, Awaiting payment, Expired. A daily task expires jobs and warns employers a few days before (Settings).</li>
+<li><strong>Job board:</strong> keyword and location search, filters (category, type, workplace, minimum salary, date posted), sort by newest or salary, featured first, AJAX paging with shareable URLs. Category, type and location archives open the board with that filter. RSS: <code>/?feed=rss2&amp;post_type=dev3jb_job</code>.</li>
+<li><strong>Single job:</strong> chips (location, workplace, type, salary, level, deadline), description, skills, apply box, company box and similar jobs.</li>
+<li><strong>Companies:</strong> logo, tagline, website, industry, size, headquarters, founded, about. Every company has a page listing its open jobs.</li>
+<li><strong>Google for Jobs:</strong> JobPosting JSON-LD on live jobs with title, description, datePosted, validThrough, employmentType (set per job type), hiringOrganization, jobLocation or remote requirements, baseSalary, identifier and directApply. Test with Google's Rich Results Test.</li>
+</ul>
+
+<h2 id="employers">Employers: posting jobs</h2>
+<ol>
+<li>Visitors register as employers from the Post a Job page (Settings &gt; "Let visitors create accounts"), or you create users with the <em>Employer</em> role.</li>
+<li><strong>Job details:</strong> pick or add a company (with logo), fill in the job, and use the <strong>writing assistant</strong> (notes in, structured job ad out) and <strong>Check wording</strong> (inclusive-language suggestions). Nothing is used until the employer clicks "Use this description" or "Replace".</li>
+<li><strong>Preview</strong> the job exactly as candidates will see it.</li>
+<li><strong>Package:</strong> use remaining credits or buy a package. Free packages publish (or queue for review) at once.</li>
+<li>The <strong>Employer dashboard</strong> lists jobs with status, applications, views and expiry, with Edit, Mark filled/Reopen, Relist (expired jobs) and Delete.</li>
+</ol>
+
+<h2 id="packages">Packages and payments</h2>
+<ul>
+<li>Packages have a price (0 = free), job posts (credits), days live, featured placement and a "Most popular" highlight. Employers can also buy packages in advance.</li>
+<li><strong>Offline:</strong> employers get your payment instructions by email; mark the payment paid in Packages &amp; payments and the job goes live (or to review).</li>
+<li><strong>Stripe Checkout:</strong> add your secret key and webhook signing secret; webhook URL is shown in the screen (event <code>checkout.session.completed</code>). Test mode is detected from <code>sk_test_</code> keys. Payments are also verified when the employer returns.</li>
+<li><strong>WooCommerce:</strong> each package becomes a hidden virtual product; a processing or completed order activates the package. Compatible with HPOS and the block checkout.</li>
+<li>Admins can give employers free credits ("Give an employer free job posts").</li>
+</ul>
+
+<h2 id="pipeline">Applications pipeline</h2>
+<ul>
+<li>Stages: New, Screening, Interview, Offer, Hired, Not a fit (candidates may also withdraw).</li>
+<li>Kanban board in the admin (Applications) and in the employer dashboard: drag cards between columns on a computer, or use the "Move to" menu on any device. Below 720px the board becomes a stacked list grouped by stage.</li>
+<li>The application panel shows the candidate profile, resume download, cover letter, match score, a 5-star rating, private notes and an activity timeline. When changing stage you can email the candidate a status update with a personal message.</li>
+<li>Candidates see neutral status words: Received, In review, Interviewing, Offer, Hired, Not selected.</li>
+<li><strong>Blind screening</strong> (Settings &gt; Fairness): employers see "Candidate #123" without contact details until they move the application to Interview.</li>
+</ul>
+
+<h2 id="candidates">Candidates</h2>
+<ul>
+<li>Profile: headline, city/country, phone (shared only when applying), summary, skills, workplace preference, wanted job types, experience, education and links.</li>
+<li>Resume upload (PDF, .docx, .txt; size limit in Settings). The resume reader fills the profile; the candidate checks every field and saves.</li>
+<li>Applying: logged-in candidates apply with their profile and resume in one click; guests (optional) enter name, email, phone, cover letter and a resume. Applications need a consent tick.</li>
+<li>Dashboard tabs: Profile, Applications (with Withdraw), Saved jobs, Job alerts and Recommended jobs.</li>
+</ul>
+
+<h2 id="alerts">Job alerts</h2>
+<p>"Email me jobs like these" on the board saves the current search. Logged-in users are subscribed at once; guests confirm by email. Digests go out daily or weekly with new matching jobs and a one-click unsubscribe link. Admins see all alerts and can send due digests now.</p>
+
+<h2 id="aifeatures">DEV3 AI features</h2>
+<table>
+<tr><th>Feature</th><th>Where</th><th>Without AI</th></tr>
+<tr><td>Job description writer (tones: professional, friendly, startup, formal)</td><td>Admin job editor (review with a diff), Post a Job form</td><td>Structured outline from notes</td></tr>
+<tr><td>Inclusive-language check</td><td>Admin job editor, Post a Job form</td><td>Built-in word list (age, gender, origin, ability, jargon)</td></tr>
+<tr><td>Resume parsing to a profile</td><td>Candidate dashboard; admin "Try the resume parser"</td><td>Built-in PDF/Word/text reader with section rules and the site's skill list. Scanned PDFs need AI.</td></tr>
+<tr><td>Match score with explanation</td><td>Pipeline cards and application panel (admin and employer)</td><td>Rule-based score with written reasons</td></tr>
+<tr><td>Score all applications (background job)</td><td>Applications / job editor</td><td>Instant rule-based scores</td></tr>
+<tr><td>Job recommendations</td><td>Candidate dashboard</td><td>Skill and role overlap; with AI the semantic index (Settings &gt; Update index) improves role fit</td></tr>
+</table>
+<p><strong>How scores work.</strong> The rule score weighs skills (40%: the job's skills found in the profile), experience (25%: years vs. the level and "N+ years" in the ad), role fit (20%: similar titles; plus semantic similarity when indexed) and location/workplace (15%). With AI on, Gemini reviews the anonymised profile against the job and the final score is the average of both, with strengths, gaps and a summary that cite the job's requirements.</p>
+
+<h2 id="fairness">Fairness and responsible use</h2>
+<ul>
+<li>Never used or sent to AI: name, email, phone, photo, age or date of birth, gender or pronouns, marital or family status, pregnancy, nationality, ethnicity, religion, disability, health, sexual orientation, union membership, political views, street address.</li>
+<li>The profile has no fields for these; the parser schema has none; any such keys returned by AI are dropped; names are scrubbed and contact details masked before matching.</li>
+<li>Scores are decision support only. They never move, hide or reject a candidate, and every score card says so.</li>
+<li>Audit hooks: <code>dev3jb_protected_attributes</code> and <code>dev3jb_match_payload</code>.</li>
+<li>Employers remain responsible for complying with local employment and anti-discrimination law.</li>
+</ul>
+
+<h2 id="shortcodes">Blocks and shortcodes</h2>
+<table>
+<tr><th>Shortcode / block</th><th>Attributes</th></tr>
+<tr><td><code>[dev3jb_jobs]</code> · Job board</td><td><code>per_page</code>, <code>filters="yes|no"</code>, <code>category</code>, <code>type</code>, <code>workplace</code> (fix a filter, e.g. a remote-only board)</td></tr>
+<tr><td><code>[dev3jb_job_search]</code> · Job search box</td><td>—</td></tr>
+<tr><td><code>[dev3jb_recent_jobs]</code> · Recent jobs</td><td><code>limit</code>, <code>featured="yes"</code>, <code>category</code></td></tr>
+<tr><td><code>[dev3jb_companies]</code> · Companies</td><td><code>limit</code></td></tr>
+<tr><td><code>[dev3jb_submit_job]</code> · Post a job form</td><td>—</td></tr>
+<tr><td><code>[dev3jb_employer_dashboard]</code></td><td>—</td></tr>
+<tr><td><code>[dev3jb_candidate_dashboard]</code></td><td>—</td></tr>
+</table>
+<p>Colours follow the accent colour in Settings; override CSS custom properties on <code>.dev3jb</code> (e.g. <code>--dev3jb-accent</code>, <code>--dev3jb-ink</code>, <code>--dev3jb-line</code>).</p>
+
+<h2 id="hooks">Developer hooks</h2>
+<table>
+<tr><th>Hook</th><th>Type</th><th>Use</th></tr>
+<tr><td><code>dev3jb_job</code></td><td>filter</td><td>Job array used in templates, REST and schema</td></tr>
+<tr><td><code>dev3jb_search_query</code></td><td>filter</td><td>WP_Query args of a job search</td></tr>
+<tr><td><code>dev3jb_schema_job</code></td><td>filter</td><td>JobPosting JSON-LD</td></tr>
+<tr><td><code>dev3jb_template_job_card</code>, <code>dev3jb_template_single_job</code></td><td>filter</td><td>Front-end markup</td></tr>
+<tr><td><code>dev3jb_email</code></td><td>filter</td><td>Every email (return empty to cancel); second arg is the event key</td></tr>
+<tr><td><code>dev3jb_inclusive_rules</code></td><td>filter</td><td>Word list of the inclusive check</td></tr>
+<tr><td><code>dev3jb_skill_vocabulary</code></td><td>filter</td><td>Skill names used by parsing and matching</td></tr>
+<tr><td><code>dev3jb_protected_attributes</code>, <code>dev3jb_match_payload</code></td><td>filter</td><td>Fairness audit</td></tr>
+<tr><td><code>dev3jb_parse_send_pdf</code></td><td>filter</td><td>Send the PDF itself to AI (default: when it has little text)</td></tr>
+<tr><td><code>dev3jb_file_access</code></td><td>filter</td><td>Who can download a private file</td></tr>
+<tr><td><code>dev3jb_job_slug</code>, <code>dev3jb_company_slug</code></td><td>filter</td><td>URL bases</td></tr>
+<tr><td><code>dev3jb_prompt_&lt;id&gt;</code></td><td>filter</td><td>Prompt templates: <code>dev3jb_describe</code>, <code>dev3jb_inclusive</code>, <code>dev3jb_parse_resume</code>, <code>dev3jb_match</code></td></tr>
+<tr><td><code>dev3jb_job_saved</code>, <code>dev3jb_job_published</code>, <code>dev3jb_job_pending</code>, <code>dev3jb_job_expiring</code>, <code>dev3jb_job_expired</code></td><td>action</td><td>Job lifecycle</td></tr>
+<tr><td><code>dev3jb_application_created</code>, <code>dev3jb_application_stage</code></td><td>action</td><td>Applications</td></tr>
+<tr><td><code>dev3jb_payment_completed</code>, <code>dev3jb_manual_payment_created</code></td><td>action</td><td>Payments</td></tr>
+<tr><td><code>dev3jb_resume_saved</code>, <code>dev3jb_user_registered</code></td><td>action</td><td>Candidates and accounts</td></tr>
+</table>
+
+<h2 id="rest">REST API (<code>/wp-json/dev3jb/v1/</code>)</h2>
+<ul>
+<li>Public: <code>GET listings</code> (search), <code>POST listings/&lt;id&gt;/apply</code>, <code>POST listings/&lt;id&gt;/save</code>, <code>POST alerts</code>, <code>POST stripe/webhook</code>. Public routes are same-origin and rate limited.</li>
+<li>Employer (logged in, own jobs only): <code>employer/jobs</code>, <code>employer/applications</code>, <code>employer/applications/&lt;id&gt;</code> (+ <code>/notes</code>, <code>/match</code>), <code>employer/jobs/&lt;id&gt;/score</code>, <code>employer/ai/describe</code>, <code>employer/ai/inclusive</code>.</li>
+<li>Candidate (own data only): <code>candidate/profile</code>, <code>candidate/resume-file</code>, <code>candidate/parse</code>, <code>candidate/applications</code>, <code>candidate/saved</code>, <code>candidate/recommended</code>.</li>
+<li>Admin (manage capability): <code>admin/*</code> for jobs, applications, candidates, companies, terms, packages, payments and alerts.</li>
+</ul>
+
+<h2 id="faq">FAQ</h2>
+<h3>Can I use it as a single-company careers page?</h3><p>Yes. Create one company, post jobs from the admin, and turn off registration.</p>
+<h3>Can I approve jobs before they go live?</h3><p>Yes: Settings &gt; New jobs &gt; Wait for my approval. Approve from Jobs (bulk) or the editor.</p>
+<h3>Is the AI required?</h3><p>No. Everything works without a key; AI adds better writing, parsing of scanned resumes and explained scores.</p>
+<h3>Where is personal data?</h3><p>Applications in <code>wp_dev3jb_applications</code>, profiles as private posts, files in the private uploads folder. Tools &gt; Export/Erase Personal Data covers applications, profiles, alerts and files.</p>
+<h3>Uninstall</h3><p>Data stays unless "Delete all job board data when the plugin is deleted" is on in Settings.</p>
+
+<h2 id="changelog">Changelog</h2>
+<h3>1.0.0</h3><p>Initial release.</p>
+</main>
+</body>
+</html>
